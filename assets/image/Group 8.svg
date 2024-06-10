@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="46px" height="46px" viewBox="0 0 46 46" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 8</title>
+    <defs>
+        <circle id="path-1" cx="19" cy="19" r="19"></circle>
+        <filter x="-18.4%" y="-13.2%" width="136.8%" height="136.8%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.166111233 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-9" transform="translate(4.000000, 2.000000)">
+            <g id="Oval-Copy">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <circle stroke="#FFFFFF" stroke-width="2" stroke-linejoin="square" fill="#FFFFFF" fill-rule="evenodd" cx="19" cy="19" r="18"></circle>
+            </g>
+            <path d="M19.0080227,36 C28.3303445,36 36,28.3463898 36,19.0080227 C36,9.6696555 28.3303445,2 18.9919773,2 C9.65361019,2 2,9.6696555 2,19.0080227 C2,28.3463898 9.6696555,36 19.0080227,36 Z M19.547976,21.125 L12.077024,21.125 C11.18497,21.125 10.5,20.4366564 10.5,19.5605828 C10.5,18.7001534 11.18497,18.0118098 12.077024,18.0118098 L17.970952,18.0118098 L17.970952,9.92377301 C17.970952,9.04769939 18.6718516,8.375 19.547976,8.375 C20.44003,8.375 21.125,9.04769939 21.125,9.92377301 L21.125,19.5605828 C21.125,20.4366564 20.44003,21.125 19.547976,21.125 Z" id="􀐬" fill="#000000" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

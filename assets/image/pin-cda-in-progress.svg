@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>pin-in-progress@2x</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pin-in-progress">
+            <polygon id="Path" points="0 0 36 0 36 36 0 36"></polygon>
+            <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="17.7058824" cy="15.5294118" r="6"></circle>
+            <path d="M18,3 C11.3736,3 6,8.49375 6,15.26875 C6,22.15 11.25,26.85375 18,33 C24.75,26.85375 30,22.15 30,15.26875 C30,8.49375 24.6264,3 18,3 Z M18,20.1153846 C15.5525538,20.1153846 13.5692308,18.0488462 13.5692308,15.5 C13.5692308,12.9511538 15.5525538,10.8846154 18,10.8846154 C20.4474462,10.8846154 22.4307692,12.9511538 22.4307692,15.5 C22.4307692,18.0488462 20.4474462,20.1153846 18,20.1153846 Z" id="icon_location" stroke="#FFFFFF" fill="#FFC409" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

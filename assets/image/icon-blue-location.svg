@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="32px" viewBox="0 0 26 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_red_location 2 copy 25</title>
+    <g id="3.3-Map-View-/-Task-Edit" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.3.2-KevitaLoca_VD--leads-map" transform="translate(-243.000000, -444.000000)">
+            <g id="Group" transform="translate(238.000000, 442.000000)">
+                <polygon id="Path" points="0 0 36 0 36 36 0 36"></polygon>
+                <g id="icon_location-blue" transform="translate(6.000000, 3.000000)" fill="#00A2D9" fill-rule="nonzero" stroke="#FFFFFF">
+                    <path d="M12,0 C5.3736,0 0,5.49375 0,12.26875 C0,19.15 5.25,23.85375 12,30 C18.75,23.85375 24,19.15 24,12.26875 C24,5.49375 18.6264,0 12,0 Z M12,17.1153846 C9.55255385,17.1153846 7.56923077,15.0488462 7.56923077,12.5 C7.56923077,9.95115385 9.55255385,7.88461538 12,7.88461538 C14.4474462,7.88461538 16.4307692,9.95115385 16.4307692,12.5 C16.4307692,15.0488462 14.4474462,17.1153846 12,17.1153846 Z" id="icon_location"></path>
+                </g>
+                <circle id="Oval" fill="#FFFFFF" fill-rule="nonzero" cx="17.7058824" cy="15.5294118" r="5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="16px" viewBox="0 0 17 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Shape Copy</title>
+    <g id="5.2--Equipment-request-install---move/repair/pickup/exchange" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5.2.2---02---Service-Request---Move" transform="translate(-375.000000, -596.000000)" fill="#00A2D9" fill-rule="nonzero">
+            <g id="Group-3" transform="translate(0.000000, 561.000000)">
+                <g id="Group-8" transform="translate(22.000000, 23.000000)">
+                    <g id="Group-7" transform="translate(339.000000, 0.000000)">
+                        <g id="Group-6" transform="translate(14.000000, 12.000000)">
+                            <path d="M1.54545455,14.5454545 L0,14.5454545 L0,10.1818182 L4.63636364,10.1818182 L4.63636364,11.6363636 L2.72,11.6363636 C3.96409091,13.3890909 6.08909091,14.5454545 8.5,14.5454545 C12.3404545,14.5454545 15.4545455,11.6145455 15.4545455,8 L17,8 C17,12.4218182 13.1981818,16 8.5,16 C5.62545455,16 3.08318182,14.6545455 1.54545455,12.6036364 L1.54545455,14.5454545 Z M0,8 C0,3.57818182 3.80181818,0 8.5,0 C11.3745455,0 13.9168182,1.34545455 15.4545455,3.39636364 L15.4545455,1.45454545 L17,1.45454545 L17,5.81818182 L12.3636364,5.81818182 L12.3636364,4.36363636 L14.28,4.36363636 C13.0359091,2.61090909 10.9109091,1.45454545 8.5,1.45454545 C4.65954545,1.45454545 1.54545455,4.38545455 1.54545455,8 L0,8 Z" id="Shape-Copy"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

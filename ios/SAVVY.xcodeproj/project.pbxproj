@@ -1,0 +1,1913 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		4F3AFF401DC2C79E006FF6B0 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AFF3E1DC2C79E006FF6B0 /* InitialViewController.m */; };
+		738741102B5537D80072434E /* RNTMapstedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7387410C2B5537D80072434E /* RNTMapstedManager.m */; };
+		738741112B5537D80072434E /* RNTMapstedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7387410C2B5537D80072434E /* RNTMapstedManager.m */; };
+		738741122B5537D80072434E /* RNTMapstedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7387410C2B5537D80072434E /* RNTMapstedManager.m */; };
+		738741132B5537D80072434E /* RNTMapstedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7387410C2B5537D80072434E /* RNTMapstedManager.m */; };
+		738741142B5537D80072434E /* RNTMapstedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7387410C2B5537D80072434E /* RNTMapstedManager.m */; };
+		738741152B5537D80072434E /* RNTMapstedManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7387410C2B5537D80072434E /* RNTMapstedManager.m */; };
+		738741162B5537D80072434E /* UIVIew-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387410D2B5537D80072434E /* UIVIew-Extension.swift */; };
+		738741172B5537D80072434E /* UIVIew-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387410D2B5537D80072434E /* UIVIew-Extension.swift */; };
+		738741182B5537D80072434E /* UIVIew-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387410D2B5537D80072434E /* UIVIew-Extension.swift */; };
+		738741192B5537D80072434E /* UIVIew-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387410D2B5537D80072434E /* UIVIew-Extension.swift */; };
+		7387411A2B5537D80072434E /* UIVIew-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387410D2B5537D80072434E /* UIVIew-Extension.swift */; };
+		7387411B2B5537D80072434E /* UIVIew-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387410D2B5537D80072434E /* UIVIew-Extension.swift */; };
+		7387411C2B5537D90072434E /* RNTMapstedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387410F2B5537D80072434E /* RNTMapstedView.swift */; };
+		7387411D2B5537D90072434E /* RNTMapstedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387410F2B5537D80072434E /* RNTMapstedView.swift */; };
+		7387411E2B5537D90072434E /* RNTMapstedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387410F2B5537D80072434E /* RNTMapstedView.swift */; };
+		7387411F2B5537D90072434E /* RNTMapstedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387410F2B5537D80072434E /* RNTMapstedView.swift */; };
+		738741202B5537D90072434E /* RNTMapstedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387410F2B5537D80072434E /* RNTMapstedView.swift */; };
+		738741212B5537D90072434E /* RNTMapstedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7387410F2B5537D80072434E /* RNTMapstedView.swift */; };
+		739424CF2B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key in Resources */ = {isa = PBXBuildFile; fileRef = 739424CE2B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key */; };
+		739424D02B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key in Resources */ = {isa = PBXBuildFile; fileRef = 739424CE2B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key */; };
+		739424D12B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key in Resources */ = {isa = PBXBuildFile; fileRef = 739424CE2B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key */; };
+		739424D22B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key in Resources */ = {isa = PBXBuildFile; fileRef = 739424CE2B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key */; };
+		739424D32B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key in Resources */ = {isa = PBXBuildFile; fileRef = 739424CE2B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key */; };
+		739424D42B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key in Resources */ = {isa = PBXBuildFile; fileRef = 739424CE2B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key */; };
+		73D7CBC32B9567E300A4B975 /* RNTMapstedNavigateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBBF2B9567E300A4B975 /* RNTMapstedNavigateView.swift */; };
+		73D7CBC42B9567E300A4B975 /* RNTMapstedNavigateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBBF2B9567E300A4B975 /* RNTMapstedNavigateView.swift */; };
+		73D7CBC52B9567E300A4B975 /* RNTMapstedNavigateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBBF2B9567E300A4B975 /* RNTMapstedNavigateView.swift */; };
+		73D7CBC62B9567E300A4B975 /* RNTMapstedNavigateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBBF2B9567E300A4B975 /* RNTMapstedNavigateView.swift */; };
+		73D7CBC72B9567E300A4B975 /* RNTMapstedNavigateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBBF2B9567E300A4B975 /* RNTMapstedNavigateView.swift */; };
+		73D7CBC82B9567E300A4B975 /* RNTMapstedNavigateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBBF2B9567E300A4B975 /* RNTMapstedNavigateView.swift */; };
+		73D7CBC92B9567E300A4B975 /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBC12B9567E300A4B975 /* DebugLog.swift */; };
+		73D7CBCA2B9567E300A4B975 /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBC12B9567E300A4B975 /* DebugLog.swift */; };
+		73D7CBCB2B9567E300A4B975 /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBC12B9567E300A4B975 /* DebugLog.swift */; };
+		73D7CBCC2B9567E300A4B975 /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBC12B9567E300A4B975 /* DebugLog.swift */; };
+		73D7CBCD2B9567E300A4B975 /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBC12B9567E300A4B975 /* DebugLog.swift */; };
+		73D7CBCE2B9567E300A4B975 /* DebugLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBC12B9567E300A4B975 /* DebugLog.swift */; };
+		73D7CBCF2B9567E300A4B975 /* RNTMapstedUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBC22B9567E300A4B975 /* RNTMapstedUIManager.m */; };
+		73D7CBD02B9567E300A4B975 /* RNTMapstedUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBC22B9567E300A4B975 /* RNTMapstedUIManager.m */; };
+		73D7CBD12B9567E300A4B975 /* RNTMapstedUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBC22B9567E300A4B975 /* RNTMapstedUIManager.m */; };
+		73D7CBD22B9567E300A4B975 /* RNTMapstedUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBC22B9567E300A4B975 /* RNTMapstedUIManager.m */; };
+		73D7CBD32B9567E300A4B975 /* RNTMapstedUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBC22B9567E300A4B975 /* RNTMapstedUIManager.m */; };
+		73D7CBD42B9567E300A4B975 /* RNTMapstedUIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D7CBC22B9567E300A4B975 /* RNTMapstedUIManager.m */; };
+		921122B329A76BFA00758EA6 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B029A76BFA00758EA6 /* Gotham-Bold.otf */; };
+		921122B429A76BFA00758EA6 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B129A76BFA00758EA6 /* Gotham-Book.otf */; };
+		921122B529A76BFA00758EA6 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B229A76BFA00758EA6 /* Gotham-Black.otf */; };
+		921122C229A76C9B00758EA6 /* RCTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122B729A76C9B00758EA6 /* RCTMapManager.m */; };
+		921122C329A76C9B00758EA6 /* RCTCatchSystemLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122BB29A76C9B00758EA6 /* RCTCatchSystemLog.m */; };
+		921122C429A76C9B00758EA6 /* RCTRefreshToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122BE29A76C9B00758EA6 /* RCTRefreshToken.m */; };
+		921122C529A76C9B00758EA6 /* RCTFootmarksManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122C029A76C9B00758EA6 /* RCTFootmarksManager.m */; };
+		921122C929A76D3700758EA6 /* RCTAppTerminateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122C829A76D3700758EA6 /* RCTAppTerminateTime.m */; };
+		921122CD29A76D4B00758EA6 /* RCTPushNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122CC29A76D4B00758EA6 /* RCTPushNotification.m */; };
+		921122D129A76D9C00758EA6 /* UtilsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122CF29A76D9C00758EA6 /* UtilsManager.m */; };
+		921122DC29A7BD5300758EA6 /* CompressImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122DB29A7BD5300758EA6 /* CompressImageManager.m */; };
+		92F1088429A9BDCB00BDA7E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F1088329A9BDCB00BDA7E2 /* Images.xcassets */; };
+		92F108AA29A9BF7200BDA7E2 /* RCTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122B729A76C9B00758EA6 /* RCTMapManager.m */; };
+		92F108AB29A9BF7200BDA7E2 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AFF3E1DC2C79E006FF6B0 /* InitialViewController.m */; };
+		92F108AC29A9BF7200BDA7E2 /* RCTAppTerminateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122C829A76D3700758EA6 /* RCTAppTerminateTime.m */; };
+		92F108AD29A9BF7200BDA7E2 /* UtilsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122CF29A76D9C00758EA6 /* UtilsManager.m */; };
+		92F108AE29A9BF7200BDA7E2 /* RCTFootmarksManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122C029A76C9B00758EA6 /* RCTFootmarksManager.m */; };
+		92F108AF29A9BF7200BDA7E2 /* RCTCatchSystemLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122BB29A76C9B00758EA6 /* RCTCatchSystemLog.m */; };
+		92F108B029A9BF7200BDA7E2 /* RCTRefreshToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122BE29A76C9B00758EA6 /* RCTRefreshToken.m */; };
+		92F108B129A9BF7200BDA7E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		92F108B229A9BF7200BDA7E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		92F108B429A9BF7200BDA7E2 /* RCTPushNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122CC29A76D4B00758EA6 /* RCTPushNotification.m */; };
+		92F108B529A9BF7200BDA7E2 /* CompressImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122DB29A7BD5300758EA6 /* CompressImageManager.m */; };
+		92F108BB29A9BF7200BDA7E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F1088329A9BDCB00BDA7E2 /* Images.xcassets */; };
+		92F108BC29A9BF7200BDA7E2 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B029A76BFA00758EA6 /* Gotham-Bold.otf */; };
+		92F108BD29A9BF7200BDA7E2 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B229A76BFA00758EA6 /* Gotham-Black.otf */; };
+		92F108BE29A9BF7200BDA7E2 /* bootconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B77BD8AE2113632C0036B284 /* bootconfig.plist */; };
+		92F108BF29A9BF7200BDA7E2 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B129A76BFA00758EA6 /* Gotham-Book.otf */; };
+		92F108C029A9BF7200BDA7E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7168FBD1FACC7EB00A48DB5 /* LaunchScreen.storyboard */; };
+		92F108CC29AA0FC400BDA7E2 /* RCTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122B729A76C9B00758EA6 /* RCTMapManager.m */; };
+		92F108CD29AA0FC400BDA7E2 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AFF3E1DC2C79E006FF6B0 /* InitialViewController.m */; };
+		92F108CE29AA0FC400BDA7E2 /* RCTAppTerminateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122C829A76D3700758EA6 /* RCTAppTerminateTime.m */; };
+		92F108CF29AA0FC400BDA7E2 /* UtilsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122CF29A76D9C00758EA6 /* UtilsManager.m */; };
+		92F108D029AA0FC400BDA7E2 /* RCTFootmarksManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122C029A76C9B00758EA6 /* RCTFootmarksManager.m */; };
+		92F108D129AA0FC400BDA7E2 /* RCTCatchSystemLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122BB29A76C9B00758EA6 /* RCTCatchSystemLog.m */; };
+		92F108D229AA0FC400BDA7E2 /* RCTRefreshToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122BE29A76C9B00758EA6 /* RCTRefreshToken.m */; };
+		92F108D329AA0FC400BDA7E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		92F108D429AA0FC400BDA7E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		92F108D629AA0FC400BDA7E2 /* RCTPushNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122CC29A76D4B00758EA6 /* RCTPushNotification.m */; };
+		92F108D729AA0FC400BDA7E2 /* CompressImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122DB29A7BD5300758EA6 /* CompressImageManager.m */; };
+		92F108DD29AA0FC400BDA7E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F1088329A9BDCB00BDA7E2 /* Images.xcassets */; };
+		92F108DE29AA0FC400BDA7E2 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B029A76BFA00758EA6 /* Gotham-Bold.otf */; };
+		92F108DF29AA0FC400BDA7E2 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B229A76BFA00758EA6 /* Gotham-Black.otf */; };
+		92F108E029AA0FC400BDA7E2 /* bootconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B77BD8AE2113632C0036B284 /* bootconfig.plist */; };
+		92F108E129AA0FC400BDA7E2 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B129A76BFA00758EA6 /* Gotham-Book.otf */; };
+		92F108E229AA0FC400BDA7E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7168FBD1FACC7EB00A48DB5 /* LaunchScreen.storyboard */; };
+		92F108EE29AA0FE200BDA7E2 /* RCTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122B729A76C9B00758EA6 /* RCTMapManager.m */; };
+		92F108EF29AA0FE200BDA7E2 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AFF3E1DC2C79E006FF6B0 /* InitialViewController.m */; };
+		92F108F029AA0FE200BDA7E2 /* RCTAppTerminateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122C829A76D3700758EA6 /* RCTAppTerminateTime.m */; };
+		92F108F129AA0FE200BDA7E2 /* UtilsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122CF29A76D9C00758EA6 /* UtilsManager.m */; };
+		92F108F229AA0FE200BDA7E2 /* RCTFootmarksManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122C029A76C9B00758EA6 /* RCTFootmarksManager.m */; };
+		92F108F329AA0FE200BDA7E2 /* RCTCatchSystemLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122BB29A76C9B00758EA6 /* RCTCatchSystemLog.m */; };
+		92F108F429AA0FE200BDA7E2 /* RCTRefreshToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122BE29A76C9B00758EA6 /* RCTRefreshToken.m */; };
+		92F108F529AA0FE200BDA7E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		92F108F629AA0FE200BDA7E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		92F108F829AA0FE200BDA7E2 /* RCTPushNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122CC29A76D4B00758EA6 /* RCTPushNotification.m */; };
+		92F108F929AA0FE200BDA7E2 /* CompressImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122DB29A7BD5300758EA6 /* CompressImageManager.m */; };
+		92F108FF29AA0FE200BDA7E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F1088329A9BDCB00BDA7E2 /* Images.xcassets */; };
+		92F1090029AA0FE200BDA7E2 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B029A76BFA00758EA6 /* Gotham-Bold.otf */; };
+		92F1090129AA0FE200BDA7E2 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B229A76BFA00758EA6 /* Gotham-Black.otf */; };
+		92F1090229AA0FE200BDA7E2 /* bootconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B77BD8AE2113632C0036B284 /* bootconfig.plist */; };
+		92F1090329AA0FE200BDA7E2 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B129A76BFA00758EA6 /* Gotham-Book.otf */; };
+		92F1090429AA0FE200BDA7E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7168FBD1FACC7EB00A48DB5 /* LaunchScreen.storyboard */; };
+		92F1091029AA100A00BDA7E2 /* RCTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122B729A76C9B00758EA6 /* RCTMapManager.m */; };
+		92F1091129AA100A00BDA7E2 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AFF3E1DC2C79E006FF6B0 /* InitialViewController.m */; };
+		92F1091229AA100A00BDA7E2 /* RCTAppTerminateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122C829A76D3700758EA6 /* RCTAppTerminateTime.m */; };
+		92F1091329AA100A00BDA7E2 /* UtilsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122CF29A76D9C00758EA6 /* UtilsManager.m */; };
+		92F1091429AA100A00BDA7E2 /* RCTFootmarksManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122C029A76C9B00758EA6 /* RCTFootmarksManager.m */; };
+		92F1091529AA100A00BDA7E2 /* RCTCatchSystemLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122BB29A76C9B00758EA6 /* RCTCatchSystemLog.m */; };
+		92F1091629AA100A00BDA7E2 /* RCTRefreshToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122BE29A76C9B00758EA6 /* RCTRefreshToken.m */; };
+		92F1091729AA100A00BDA7E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		92F1091829AA100A00BDA7E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		92F1091A29AA100A00BDA7E2 /* RCTPushNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122CC29A76D4B00758EA6 /* RCTPushNotification.m */; };
+		92F1091B29AA100A00BDA7E2 /* CompressImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122DB29A7BD5300758EA6 /* CompressImageManager.m */; };
+		92F1092129AA100A00BDA7E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F1088329A9BDCB00BDA7E2 /* Images.xcassets */; };
+		92F1092229AA100A00BDA7E2 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B029A76BFA00758EA6 /* Gotham-Bold.otf */; };
+		92F1092329AA100A00BDA7E2 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B229A76BFA00758EA6 /* Gotham-Black.otf */; };
+		92F1092429AA100A00BDA7E2 /* bootconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B77BD8AE2113632C0036B284 /* bootconfig.plist */; };
+		92F1092529AA100A00BDA7E2 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B129A76BFA00758EA6 /* Gotham-Book.otf */; };
+		92F1092629AA100A00BDA7E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7168FBD1FACC7EB00A48DB5 /* LaunchScreen.storyboard */; };
+		92F1093229AA103E00BDA7E2 /* RCTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122B729A76C9B00758EA6 /* RCTMapManager.m */; };
+		92F1093329AA103E00BDA7E2 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F3AFF3E1DC2C79E006FF6B0 /* InitialViewController.m */; };
+		92F1093429AA103E00BDA7E2 /* RCTAppTerminateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122C829A76D3700758EA6 /* RCTAppTerminateTime.m */; };
+		92F1093529AA103E00BDA7E2 /* UtilsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122CF29A76D9C00758EA6 /* UtilsManager.m */; };
+		92F1093629AA103E00BDA7E2 /* RCTFootmarksManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122C029A76C9B00758EA6 /* RCTFootmarksManager.m */; };
+		92F1093729AA103E00BDA7E2 /* RCTCatchSystemLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122BB29A76C9B00758EA6 /* RCTCatchSystemLog.m */; };
+		92F1093829AA103E00BDA7E2 /* RCTRefreshToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122BE29A76C9B00758EA6 /* RCTRefreshToken.m */; };
+		92F1093929AA103E00BDA7E2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
+		92F1093A29AA103E00BDA7E2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		92F1093C29AA103E00BDA7E2 /* RCTPushNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122CC29A76D4B00758EA6 /* RCTPushNotification.m */; };
+		92F1093D29AA103E00BDA7E2 /* CompressImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 921122DB29A7BD5300758EA6 /* CompressImageManager.m */; };
+		92F1094329AA103E00BDA7E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92F1088329A9BDCB00BDA7E2 /* Images.xcassets */; };
+		92F1094429AA103E00BDA7E2 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B029A76BFA00758EA6 /* Gotham-Bold.otf */; };
+		92F1094529AA103E00BDA7E2 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B229A76BFA00758EA6 /* Gotham-Black.otf */; };
+		92F1094629AA103E00BDA7E2 /* bootconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B77BD8AE2113632C0036B284 /* bootconfig.plist */; };
+		92F1094729AA103E00BDA7E2 /* Gotham-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 921122B129A76BFA00758EA6 /* Gotham-Book.otf */; };
+		92F1094829AA103E00BDA7E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7168FBD1FACC7EB00A48DB5 /* LaunchScreen.storyboard */; };
+		92F1095229AB028400BDA7E2 /* hermes.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F1095129AB028400BDA7E2 /* hermes.xcframework */; };
+		92F1095429AB029200BDA7E2 /* libReact-hermes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F1095329AB029200BDA7E2 /* libReact-hermes.a */; };
+		92F1095629AB02A800BDA7E2 /* libReact-hermes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F1095529AB02A800BDA7E2 /* libReact-hermes.a */; };
+		92F1095729AB02A800BDA7E2 /* hermes.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F1095129AB028400BDA7E2 /* hermes.xcframework */; };
+		92F1095929AB02B400BDA7E2 /* libReact-hermes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F1095829AB02B400BDA7E2 /* libReact-hermes.a */; };
+		92F1095A29AB02B400BDA7E2 /* hermes.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F1095129AB028400BDA7E2 /* hermes.xcframework */; };
+		92F1095C29AB02BD00BDA7E2 /* libReact-hermes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F1095B29AB02BD00BDA7E2 /* libReact-hermes.a */; };
+		92F1095D29AB02BD00BDA7E2 /* hermes.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F1095129AB028400BDA7E2 /* hermes.xcframework */; };
+		92F1095F29AB02C400BDA7E2 /* libReact-hermes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F1095E29AB02C400BDA7E2 /* libReact-hermes.a */; };
+		92F1096029AB02C400BDA7E2 /* hermes.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F1095129AB028400BDA7E2 /* hermes.xcframework */; };
+		92F1096229AB02CA00BDA7E2 /* libReact-hermes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F1096129AB02CA00BDA7E2 /* libReact-hermes.a */; };
+		92F1096329AB02CA00BDA7E2 /* hermes.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F1095129AB028400BDA7E2 /* hermes.xcframework */; };
+		92F1096B29AB283600BDA7E2 /* FTMCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921122D629A77F7700758EA6 /* FTMCore.xcframework */; };
+		92F1096C29AB283600BDA7E2 /* FTMCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921122D629A77F7700758EA6 /* FTMCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92F1096E29AB2C6100BDA7E2 /* FTMCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921122D629A77F7700758EA6 /* FTMCore.xcframework */; };
+		92F1096F29AB2C6100BDA7E2 /* FTMCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921122D629A77F7700758EA6 /* FTMCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92F1097129AB2C6400BDA7E2 /* FTMCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921122D629A77F7700758EA6 /* FTMCore.xcframework */; };
+		92F1097229AB2C6400BDA7E2 /* FTMCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921122D629A77F7700758EA6 /* FTMCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92F1097429AB2C6800BDA7E2 /* FTMCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921122D629A77F7700758EA6 /* FTMCore.xcframework */; };
+		92F1097529AB2C6800BDA7E2 /* FTMCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921122D629A77F7700758EA6 /* FTMCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92F1097729AB2C6A00BDA7E2 /* FTMCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921122D629A77F7700758EA6 /* FTMCore.xcframework */; };
+		92F1097829AB2C6A00BDA7E2 /* FTMCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921122D629A77F7700758EA6 /* FTMCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		92F1097A29AB2C6D00BDA7E2 /* FTMCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921122D629A77F7700758EA6 /* FTMCore.xcframework */; };
+		92F1097B29AB2C6D00BDA7E2 /* FTMCore.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 921122D629A77F7700758EA6 /* FTMCore.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A2655C1429F78DB600CDD80B /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = A2655C1329F78DB600CDD80B /* bundle */; };
+		A2655C1529F78DB600CDD80B /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = A2655C1329F78DB600CDD80B /* bundle */; };
+		A2655C1629F78DB600CDD80B /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = A2655C1329F78DB600CDD80B /* bundle */; };
+		A2655C1729F78DB600CDD80B /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = A2655C1329F78DB600CDD80B /* bundle */; };
+		A2655C1829F78DB600CDD80B /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = A2655C1329F78DB600CDD80B /* bundle */; };
+		A2655C1929F78DB600CDD80B /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = A2655C1329F78DB600CDD80B /* bundle */; };
+		A2B956B02A4AC0B600871CF9 /* RCTMultiBundleLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B956AF2A4AC0B600871CF9 /* RCTMultiBundleLoad.m */; };
+		A2B956B12A4AC0B600871CF9 /* RCTMultiBundleLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B956AF2A4AC0B600871CF9 /* RCTMultiBundleLoad.m */; };
+		A2B956B22A4AC0B600871CF9 /* RCTMultiBundleLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B956AF2A4AC0B600871CF9 /* RCTMultiBundleLoad.m */; };
+		A2B956B32A4AC0B600871CF9 /* RCTMultiBundleLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B956AF2A4AC0B600871CF9 /* RCTMultiBundleLoad.m */; };
+		A2B956B42A4AC0B600871CF9 /* RCTMultiBundleLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B956AF2A4AC0B600871CF9 /* RCTMultiBundleLoad.m */; };
+		A2B956B52A4AC0B600871CF9 /* RCTMultiBundleLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B956AF2A4AC0B600871CF9 /* RCTMultiBundleLoad.m */; };
+		B7168FBE1FACC7EB00A48DB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7168FBD1FACC7EB00A48DB5 /* LaunchScreen.storyboard */; };
+		B77BD8AF2113632C0036B284 /* bootconfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = B77BD8AE2113632C0036B284 /* bootconfig.plist */; };
+		FEA52EC22BFCBF050042677A /* www in Resources */ = {isa = PBXBuildFile; fileRef = FEA52EC12BFCBF050042677A /* www */; };
+		FEA52EC32BFCBF050042677A /* www in Resources */ = {isa = PBXBuildFile; fileRef = FEA52EC12BFCBF050042677A /* www */; };
+		FEA52EC62BFCE6BA0042677A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA52EC42BFCE6BA0042677A /* libsqlite3.0.tbd */; };
+		FEA52EC72BFCE6BA0042677A /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FEA52EC52BFCE6BA0042677A /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92F1096D29AB283600BDA7E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				92F1096C29AB283600BDA7E2 /* FTMCore.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F1097029AB2C6100BDA7E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				92F1096F29AB2C6100BDA7E2 /* FTMCore.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F1097329AB2C6400BDA7E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				92F1097229AB2C6400BDA7E2 /* FTMCore.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F1097629AB2C6800BDA7E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				92F1097529AB2C6800BDA7E2 /* FTMCore.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F1097929AB2C6B00BDA7E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				92F1097829AB2C6A00BDA7E2 /* FTMCore.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F1097C29AB2C6E00BDA7E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				92F1097B29AB2C6D00BDA7E2 /* FTMCore.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* SAVVY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAVVY.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SAVVY/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = SAVVY/AppDelegate.m; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SAVVY/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = SAVVY/main.m; sourceTree = "<group>"; };
+		4F3AFF3D1DC2C79E006FF6B0 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InitialViewController.h; path = SAVVY/InitialViewController.h; sourceTree = "<group>"; };
+		4F3AFF3E1DC2C79E006FF6B0 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InitialViewController.m; path = SAVVY/InitialViewController.m; sourceTree = "<group>"; };
+		4FF12F8E1DCA93E2004D9EF9 /* SAVVY.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = SAVVY.entitlements; path = SAVVY/SAVVY.entitlements; sourceTree = "<group>"; };
+		7387410C2B5537D80072434E /* RNTMapstedManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTMapstedManager.m; sourceTree = "<group>"; };
+		7387410D2B5537D80072434E /* UIVIew-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIVIew-Extension.swift"; sourceTree = "<group>"; };
+		7387410E2B5537D80072434E /* RNTMapstedManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTMapstedManager.h; sourceTree = "<group>"; };
+		7387410F2B5537D80072434E /* RNTMapstedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNTMapstedView.swift; sourceTree = "<group>"; };
+		739424CE2B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ios_licence_pepsico_hamilton.key; sourceTree = "<group>"; };
+		73D7CBBF2B9567E300A4B975 /* RNTMapstedNavigateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNTMapstedNavigateView.swift; sourceTree = "<group>"; };
+		73D7CBC02B9567E300A4B975 /* RNTMapstedUIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNTMapstedUIManager.h; sourceTree = "<group>"; };
+		73D7CBC12B9567E300A4B975 /* DebugLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugLog.swift; sourceTree = "<group>"; };
+		73D7CBC22B9567E300A4B975 /* RNTMapstedUIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNTMapstedUIManager.m; sourceTree = "<group>"; };
+		921122B029A76BFA00758EA6 /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Bold.otf"; path = "../assets/fonts/Gotham-Bold.otf"; sourceTree = "<group>"; };
+		921122B129A76BFA00758EA6 /* Gotham-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Book.otf"; path = "../assets/fonts/Gotham-Book.otf"; sourceTree = "<group>"; };
+		921122B229A76BFA00758EA6 /* Gotham-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Gotham-Black.otf"; path = "../assets/fonts/Gotham-Black.otf"; sourceTree = "<group>"; };
+		921122B729A76C9B00758EA6 /* RCTMapManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTMapManager.m; sourceTree = "<group>"; };
+		921122B829A76C9B00758EA6 /* RCTMapManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTMapManager.h; sourceTree = "<group>"; };
+		921122BA29A76C9B00758EA6 /* RCTCatchSystemLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTCatchSystemLog.h; sourceTree = "<group>"; };
+		921122BB29A76C9B00758EA6 /* RCTCatchSystemLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTCatchSystemLog.m; sourceTree = "<group>"; };
+		921122BD29A76C9B00758EA6 /* RCTRefreshToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTRefreshToken.h; sourceTree = "<group>"; };
+		921122BE29A76C9B00758EA6 /* RCTRefreshToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTRefreshToken.m; sourceTree = "<group>"; };
+		921122C029A76C9B00758EA6 /* RCTFootmarksManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTFootmarksManager.m; sourceTree = "<group>"; };
+		921122C129A76C9B00758EA6 /* RCTFootmarksManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTFootmarksManager.h; sourceTree = "<group>"; };
+		921122C729A76D3700758EA6 /* RCTAppTerminateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTAppTerminateTime.h; sourceTree = "<group>"; };
+		921122C829A76D3700758EA6 /* RCTAppTerminateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTAppTerminateTime.m; sourceTree = "<group>"; };
+		921122CB29A76D4B00758EA6 /* RCTPushNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCTPushNotification.h; sourceTree = "<group>"; };
+		921122CC29A76D4B00758EA6 /* RCTPushNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCTPushNotification.m; sourceTree = "<group>"; };
+		921122CF29A76D9C00758EA6 /* UtilsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtilsManager.m; sourceTree = "<group>"; };
+		921122D029A76D9C00758EA6 /* UtilsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtilsManager.h; sourceTree = "<group>"; };
+		921122D229A77AEA00758EA6 /* SAVVY-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SAVVY-Bridging-Header.h"; sourceTree = "<group>"; };
+		921122D329A77AEA00758EA6 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		921122D629A77F7700758EA6 /* FTMCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FTMCore.xcframework; sourceTree = "<group>"; };
+		921122DA29A7BD5300758EA6 /* CompressImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompressImageManager.h; sourceTree = "<group>"; };
+		921122DB29A7BD5300758EA6 /* CompressImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompressImageManager.m; sourceTree = "<group>"; };
+		92F1088229A9BCD900BDA7E2 /* SAVVY copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SAVVY copy-Info.plist"; path = "/Users/sdou003/project/PepsiCo/update_sdk/new_project/SAVVY/ios/SAVVY copy-Info.plist"; sourceTree = "<absolute>"; };
+		92F1088329A9BDCB00BDA7E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = assets/src/Images.xcassets; sourceTree = "<group>"; };
+		92F108A629A9BEFA00BDA7E2 /* SAVVY copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SAVVY copy2-Info.plist"; path = "/Users/sdou003/project/PepsiCo/update_sdk/new_project/SAVVY/ios/SAVVY copy2-Info.plist"; sourceTree = "<absolute>"; };
+		92F108C729A9BF7200BDA7E2 /* SAVVY Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAVVY Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F108C829A9BF7200BDA7E2 /* SAVVY copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SAVVY copy-Info.plist"; path = "/Users/sdou003/project/PepsiCo/update_sdk/new_project/SAVVY/ios/SAVVY copy-Info.plist"; sourceTree = "<absolute>"; };
+		92F108E929AA0FC400BDA7E2 /* SAVVY QA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAVVY QA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F108EA29AA0FC400BDA7E2 /* SAVVY Dev copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SAVVY Dev copy-Info.plist"; path = "/Users/sdou003/project/PepsiCo/update_sdk/new_project/SAVVY/ios/SAVVY Dev copy-Info.plist"; sourceTree = "<absolute>"; };
+		92F1090B29AA0FE200BDA7E2 /* SAVVY UAT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAVVY UAT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F1090C29AA0FE200BDA7E2 /* SAVVY QA copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SAVVY QA copy-Info.plist"; path = "/Users/sdou003/project/PepsiCo/update_sdk/new_project/SAVVY/ios/SAVVY QA copy-Info.plist"; sourceTree = "<absolute>"; };
+		92F1092D29AA100A00BDA7E2 /* SAVVY PreProd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAVVY PreProd.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F1092E29AA100B00BDA7E2 /* SAVVY UAT copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SAVVY UAT copy-Info.plist"; path = "/Users/sdou003/project/PepsiCo/update_sdk/new_project/SAVVY/ios/SAVVY UAT copy-Info.plist"; sourceTree = "<absolute>"; };
+		92F1094F29AA103E00BDA7E2 /* SAVVY ProdS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SAVVY ProdS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F1095029AA103E00BDA7E2 /* SAVVY PreProd copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SAVVY PreProd copy-Info.plist"; path = "/Users/sdou003/project/PepsiCo/update_sdk/new_project/SAVVY/ios/SAVVY PreProd copy-Info.plist"; sourceTree = "<absolute>"; };
+		92F1095129AB028400BDA7E2 /* hermes.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = hermes.xcframework; path = "Pods/hermes-engine/destroot/Library/Frameworks/universal/hermes.xcframework"; sourceTree = "<group>"; };
+		92F1095329AB029200BDA7E2 /* libReact-hermes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-hermes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F1095529AB02A800BDA7E2 /* libReact-hermes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-hermes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F1095829AB02B400BDA7E2 /* libReact-hermes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-hermes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F1095B29AB02BD00BDA7E2 /* libReact-hermes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-hermes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F1095E29AB02C400BDA7E2 /* libReact-hermes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-hermes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F1096129AB02CA00BDA7E2 /* libReact-hermes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libReact-hermes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2655C1329F78DB600CDD80B /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundle; sourceTree = "<group>"; };
+		A2655C1A29F8FA1300CDD80B /* RCTBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTBridge.h; path = SAVVY/RCTBridge.h; sourceTree = "<group>"; };
+		A2B956AE2A4AC0B600871CF9 /* RCTMultiBundleLoad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RCTMultiBundleLoad.h; sourceTree = "<group>"; };
+		A2B956AF2A4AC0B600871CF9 /* RCTMultiBundleLoad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RCTMultiBundleLoad.m; sourceTree = "<group>"; };
+		B7168FBD1FACC7EB00A48DB5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = "../mobile_sdk/SalesforceMobileSDK-iOS/shared/resources/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		B77BD8AE2113632C0036B284 /* bootconfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = bootconfig.plist; path = SAVVY/bootconfig.plist; sourceTree = "<group>"; };
+		FEA52EC12BFCBF050042677A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		FEA52EC42BFCE6BA0042677A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		FEA52EC52BFCE6BA0042677A /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F1095429AB029200BDA7E2 /* libReact-hermes.a in Frameworks */,
+				92F1095229AB028400BDA7E2 /* hermes.xcframework in Frameworks */,
+				92F1096B29AB283600BDA7E2 /* FTMCore.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F108B629A9BF7200BDA7E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA52EC62BFCE6BA0042677A /* libsqlite3.0.tbd in Frameworks */,
+				FEA52EC72BFCE6BA0042677A /* libsqlite3.tbd in Frameworks */,
+				92F1095729AB02A800BDA7E2 /* hermes.xcframework in Frameworks */,
+				92F1096E29AB2C6100BDA7E2 /* FTMCore.xcframework in Frameworks */,
+				92F1095629AB02A800BDA7E2 /* libReact-hermes.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F108D829AA0FC400BDA7E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F1095A29AB02B400BDA7E2 /* hermes.xcframework in Frameworks */,
+				92F1097129AB2C6400BDA7E2 /* FTMCore.xcframework in Frameworks */,
+				92F1095929AB02B400BDA7E2 /* libReact-hermes.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F108FA29AA0FE200BDA7E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F1095D29AB02BD00BDA7E2 /* hermes.xcframework in Frameworks */,
+				92F1097429AB2C6800BDA7E2 /* FTMCore.xcframework in Frameworks */,
+				92F1095C29AB02BD00BDA7E2 /* libReact-hermes.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F1091C29AA100A00BDA7E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F1096029AB02C400BDA7E2 /* hermes.xcframework in Frameworks */,
+				92F1097729AB2C6A00BDA7E2 /* FTMCore.xcframework in Frameworks */,
+				92F1095F29AB02C400BDA7E2 /* libReact-hermes.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F1093E29AA103E00BDA7E2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F1096329AB02CA00BDA7E2 /* hermes.xcframework in Frameworks */,
+				92F1097A29AB2C6D00BDA7E2 /* FTMCore.xcframework in Frameworks */,
+				92F1096229AB02CA00BDA7E2 /* libReact-hermes.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D626AFC93383E80B4BA6B68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		13B07FAE1A68108700A75B9A /* SAVVY */ = {
+			isa = PBXGroup;
+			children = (
+				739424CD2B9EDAB80036A420 /* Mapsted License */,
+				A2655C1329F78DB600CDD80B /* bundle */,
+				4FF12F8E1DCA93E2004D9EF9 /* SAVVY.entitlements */,
+				4F3AFF421DC2C856006FF6B0 /* Classes */,
+				4F3AFF431DC2C869006FF6B0 /* Supporting Files */,
+			);
+			name = SAVVY;
+			sourceTree = "<group>";
+		};
+		4F3AFF421DC2C856006FF6B0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				73D7CBBE2B9567E300A4B975 /* RNTMapstedUIManager */,
+				7387410B2B5537D80072434E /* RNTMapstedManager */,
+				A2655C1B29F92D6D00CDD80B /* multiBundle */,
+				921122D929A7BD5300758EA6 /* CompressImageManager */,
+				921122CE29A76D9C00758EA6 /* UtilsManager */,
+				921122CA29A76D4B00758EA6 /* RCTPushNotification */,
+				921122C629A76D3700758EA6 /* RCTAppTerminateTime */,
+				921122B929A76C9B00758EA6 /* RCTCatchSystemLog */,
+				921122BF29A76C9B00758EA6 /* RCTFootmarksManager */,
+				921122B629A76C9B00758EA6 /* RCTMapManager */,
+				921122BC29A76C9B00758EA6 /* RCTRefreshToken */,
+				4F3AFF3D1DC2C79E006FF6B0 /* InitialViewController.h */,
+				4F3AFF3E1DC2C79E006FF6B0 /* InitialViewController.m */,
+				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
+				13B07FB01A68108700A75B9A /* AppDelegate.m */,
+				A2655C1A29F8FA1300CDD80B /* RCTBridge.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		4F3AFF431DC2C869006FF6B0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				92F1088329A9BDCB00BDA7E2 /* Images.xcassets */,
+				B77BD8AE2113632C0036B284 /* bootconfig.plist */,
+				B7168FBD1FACC7EB00A48DB5 /* LaunchScreen.storyboard */,
+				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
+				13B07FB71A68108700A75B9A /* main.m */,
+				13B07FB61A68108700A75B9A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7387410B2B5537D80072434E /* RNTMapstedManager */ = {
+			isa = PBXGroup;
+			children = (
+				7387410E2B5537D80072434E /* RNTMapstedManager.h */,
+				7387410C2B5537D80072434E /* RNTMapstedManager.m */,
+				7387410D2B5537D80072434E /* UIVIew-Extension.swift */,
+				7387410F2B5537D80072434E /* RNTMapstedView.swift */,
+			);
+			name = RNTMapstedManager;
+			path = SAVVY/RNTMapstedManager;
+			sourceTree = "<group>";
+		};
+		739424CD2B9EDAB80036A420 /* Mapsted License */ = {
+			isa = PBXGroup;
+			children = (
+				739424CE2B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key */,
+			);
+			path = "Mapsted License";
+			sourceTree = "<group>";
+		};
+		73D7CBBE2B9567E300A4B975 /* RNTMapstedUIManager */ = {
+			isa = PBXGroup;
+			children = (
+				73D7CBC02B9567E300A4B975 /* RNTMapstedUIManager.h */,
+				73D7CBC22B9567E300A4B975 /* RNTMapstedUIManager.m */,
+				73D7CBBF2B9567E300A4B975 /* RNTMapstedNavigateView.swift */,
+				73D7CBC12B9567E300A4B975 /* DebugLog.swift */,
+			);
+			name = RNTMapstedUIManager;
+			path = SAVVY/RNTMapstedUIManager;
+			sourceTree = "<group>";
+		};
+		83CBB9F61A601CBA00E9B192 = {
+			isa = PBXGroup;
+			children = (
+				FEA52EC12BFCBF050042677A /* www */,
+				921122D329A77AEA00758EA6 /* File.swift */,
+				921122B229A76BFA00758EA6 /* Gotham-Black.otf */,
+				921122B029A76BFA00758EA6 /* Gotham-Bold.otf */,
+				921122B129A76BFA00758EA6 /* Gotham-Book.otf */,
+				13B07FAE1A68108700A75B9A /* SAVVY */,
+				83CBBA001A601CBA00E9B192 /* Products */,
+				C73512AABD4BDBC0734E686B /* Frameworks */,
+				921122D229A77AEA00758EA6 /* SAVVY-Bridging-Header.h */,
+				92F1088229A9BCD900BDA7E2 /* SAVVY copy-Info.plist */,
+				92F108A629A9BEFA00BDA7E2 /* SAVVY copy2-Info.plist */,
+				92F108C829A9BF7200BDA7E2 /* SAVVY copy-Info.plist */,
+				92F108EA29AA0FC400BDA7E2 /* SAVVY Dev copy-Info.plist */,
+				92F1090C29AA0FE200BDA7E2 /* SAVVY QA copy-Info.plist */,
+				92F1092E29AA100B00BDA7E2 /* SAVVY UAT copy-Info.plist */,
+				92F1095029AA103E00BDA7E2 /* SAVVY PreProd copy-Info.plist */,
+				0D626AFC93383E80B4BA6B68 /* Pods */,
+			);
+			indentWidth = 2;
+			sourceTree = "<group>";
+			tabWidth = 2;
+		};
+		83CBBA001A601CBA00E9B192 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13B07F961A680F5B00A75B9A /* SAVVY.app */,
+				92F108C729A9BF7200BDA7E2 /* SAVVY Dev.app */,
+				92F108E929AA0FC400BDA7E2 /* SAVVY QA.app */,
+				92F1090B29AA0FE200BDA7E2 /* SAVVY UAT.app */,
+				92F1092D29AA100A00BDA7E2 /* SAVVY PreProd.app */,
+				92F1094F29AA103E00BDA7E2 /* SAVVY ProdS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		921122B629A76C9B00758EA6 /* RCTMapManager */ = {
+			isa = PBXGroup;
+			children = (
+				921122B729A76C9B00758EA6 /* RCTMapManager.m */,
+				921122B829A76C9B00758EA6 /* RCTMapManager.h */,
+			);
+			name = RCTMapManager;
+			path = SAVVY/RCTMapManager;
+			sourceTree = "<group>";
+		};
+		921122B929A76C9B00758EA6 /* RCTCatchSystemLog */ = {
+			isa = PBXGroup;
+			children = (
+				921122BA29A76C9B00758EA6 /* RCTCatchSystemLog.h */,
+				921122BB29A76C9B00758EA6 /* RCTCatchSystemLog.m */,
+			);
+			name = RCTCatchSystemLog;
+			path = SAVVY/RCTCatchSystemLog;
+			sourceTree = "<group>";
+		};
+		921122BC29A76C9B00758EA6 /* RCTRefreshToken */ = {
+			isa = PBXGroup;
+			children = (
+				921122BD29A76C9B00758EA6 /* RCTRefreshToken.h */,
+				921122BE29A76C9B00758EA6 /* RCTRefreshToken.m */,
+			);
+			name = RCTRefreshToken;
+			path = SAVVY/RCTRefreshToken;
+			sourceTree = "<group>";
+		};
+		921122BF29A76C9B00758EA6 /* RCTFootmarksManager */ = {
+			isa = PBXGroup;
+			children = (
+				921122C029A76C9B00758EA6 /* RCTFootmarksManager.m */,
+				921122C129A76C9B00758EA6 /* RCTFootmarksManager.h */,
+			);
+			name = RCTFootmarksManager;
+			path = SAVVY/RCTFootmarksManager;
+			sourceTree = "<group>";
+		};
+		921122C629A76D3700758EA6 /* RCTAppTerminateTime */ = {
+			isa = PBXGroup;
+			children = (
+				921122C729A76D3700758EA6 /* RCTAppTerminateTime.h */,
+				921122C829A76D3700758EA6 /* RCTAppTerminateTime.m */,
+			);
+			name = RCTAppTerminateTime;
+			path = SAVVY/RCTAppTerminateTime;
+			sourceTree = "<group>";
+		};
+		921122CA29A76D4B00758EA6 /* RCTPushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				921122CB29A76D4B00758EA6 /* RCTPushNotification.h */,
+				921122CC29A76D4B00758EA6 /* RCTPushNotification.m */,
+			);
+			name = RCTPushNotification;
+			path = SAVVY/RCTPushNotification;
+			sourceTree = "<group>";
+		};
+		921122CE29A76D9C00758EA6 /* UtilsManager */ = {
+			isa = PBXGroup;
+			children = (
+				921122CF29A76D9C00758EA6 /* UtilsManager.m */,
+				921122D029A76D9C00758EA6 /* UtilsManager.h */,
+			);
+			name = UtilsManager;
+			path = SAVVY/UtilsManager;
+			sourceTree = "<group>";
+		};
+		921122D929A7BD5300758EA6 /* CompressImageManager */ = {
+			isa = PBXGroup;
+			children = (
+				921122DA29A7BD5300758EA6 /* CompressImageManager.h */,
+				921122DB29A7BD5300758EA6 /* CompressImageManager.m */,
+			);
+			name = CompressImageManager;
+			path = SAVVY/CompressImageManager;
+			sourceTree = "<group>";
+		};
+		A2655C1B29F92D6D00CDD80B /* multiBundle */ = {
+			isa = PBXGroup;
+			children = (
+				A2B956AE2A4AC0B600871CF9 /* RCTMultiBundleLoad.h */,
+				A2B956AF2A4AC0B600871CF9 /* RCTMultiBundleLoad.m */,
+			);
+			name = multiBundle;
+			path = SAVVY/multiBundle;
+			sourceTree = "<group>";
+		};
+		C73512AABD4BDBC0734E686B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FEA52EC42BFCE6BA0042677A /* libsqlite3.0.tbd */,
+				FEA52EC52BFCE6BA0042677A /* libsqlite3.tbd */,
+				921122D629A77F7700758EA6 /* FTMCore.xcframework */,
+				92F1096129AB02CA00BDA7E2 /* libReact-hermes.a */,
+				92F1095E29AB02C400BDA7E2 /* libReact-hermes.a */,
+				92F1095B29AB02BD00BDA7E2 /* libReact-hermes.a */,
+				92F1095829AB02B400BDA7E2 /* libReact-hermes.a */,
+				92F1095529AB02A800BDA7E2 /* libReact-hermes.a */,
+				92F1095329AB029200BDA7E2 /* libReact-hermes.a */,
+				92F1095129AB028400BDA7E2 /* hermes.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13B07F861A680F5B00A75B9A /* SAVVY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SAVVY" */;
+			buildPhases = (
+				13B07F871A680F5B00A75B9A /* Sources */,
+				13B07F8C1A680F5B00A75B9A /* Frameworks */,
+				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				13B07F8E1A680F5B00A75B9A /* Resources */,
+				92F1096D29AB283600BDA7E2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAVVY;
+			productName = "Hello World";
+			productReference = 13B07F961A680F5B00A75B9A /* SAVVY.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92F108A729A9BF7200BDA7E2 /* SAVVY Dev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F108C429A9BF7200BDA7E2 /* Build configuration list for PBXNativeTarget "SAVVY Dev" */;
+			buildPhases = (
+				92F108A929A9BF7200BDA7E2 /* Sources */,
+				92F108B629A9BF7200BDA7E2 /* Frameworks */,
+				92F108C129A9BF7200BDA7E2 /* Bundle React Native code and images */,
+				92F108B929A9BF7200BDA7E2 /* Resources */,
+				92F1097029AB2C6100BDA7E2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SAVVY Dev";
+			productName = "Hello World";
+			productReference = 92F108C729A9BF7200BDA7E2 /* SAVVY Dev.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92F108C929AA0FC400BDA7E2 /* SAVVY QA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F108E629AA0FC400BDA7E2 /* Build configuration list for PBXNativeTarget "SAVVY QA" */;
+			buildPhases = (
+				92F108CB29AA0FC400BDA7E2 /* Sources */,
+				92F108D829AA0FC400BDA7E2 /* Frameworks */,
+				92F108E329AA0FC400BDA7E2 /* Bundle React Native code and images */,
+				92F108DB29AA0FC400BDA7E2 /* Resources */,
+				92F1097329AB2C6400BDA7E2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SAVVY QA";
+			productName = "Hello World";
+			productReference = 92F108E929AA0FC400BDA7E2 /* SAVVY QA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92F108EB29AA0FE200BDA7E2 /* SAVVY UAT */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F1090829AA0FE200BDA7E2 /* Build configuration list for PBXNativeTarget "SAVVY UAT" */;
+			buildPhases = (
+				92F108ED29AA0FE200BDA7E2 /* Sources */,
+				92F108FA29AA0FE200BDA7E2 /* Frameworks */,
+				92F1090529AA0FE200BDA7E2 /* Bundle React Native code and images */,
+				92F108FD29AA0FE200BDA7E2 /* Resources */,
+				92F1097629AB2C6800BDA7E2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SAVVY UAT";
+			productName = "Hello World";
+			productReference = 92F1090B29AA0FE200BDA7E2 /* SAVVY UAT.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92F1090D29AA100A00BDA7E2 /* SAVVY PreProd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F1092A29AA100A00BDA7E2 /* Build configuration list for PBXNativeTarget "SAVVY PreProd" */;
+			buildPhases = (
+				92F1090F29AA100A00BDA7E2 /* Sources */,
+				92F1091C29AA100A00BDA7E2 /* Frameworks */,
+				92F1092729AA100A00BDA7E2 /* Bundle React Native code and images */,
+				92F1091F29AA100A00BDA7E2 /* Resources */,
+				92F1097929AB2C6B00BDA7E2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SAVVY PreProd";
+			productName = "Hello World";
+			productReference = 92F1092D29AA100A00BDA7E2 /* SAVVY PreProd.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92F1092F29AA103E00BDA7E2 /* SAVVY ProdS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92F1094C29AA103E00BDA7E2 /* Build configuration list for PBXNativeTarget "SAVVY ProdS" */;
+			buildPhases = (
+				92F1093129AA103E00BDA7E2 /* Sources */,
+				92F1093E29AA103E00BDA7E2 /* Frameworks */,
+				92F1094929AA103E00BDA7E2 /* Bundle React Native code and images */,
+				92F1094129AA103E00BDA7E2 /* Resources */,
+				92F1097C29AB2C6E00BDA7E2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SAVVY ProdS";
+			productName = "Hello World";
+			productReference = 92F1094F29AA103E00BDA7E2 /* SAVVY ProdS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		83CBB9F71A601CBA00E9B192 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				KnownAssetTags = (
+					Mapsted,
+				);
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = SAVVYOrganizationName;
+				TargetAttributes = {
+					13B07F861A680F5B00A75B9A = {
+						LastSwiftMigration = 1340;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "SAVVY" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83CBB9F61A601CBA00E9B192;
+			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13B07F861A680F5B00A75B9A /* SAVVY */,
+				92F108A729A9BF7200BDA7E2 /* SAVVY Dev */,
+				92F108C929AA0FC400BDA7E2 /* SAVVY QA */,
+				92F108EB29AA0FE200BDA7E2 /* SAVVY UAT */,
+				92F1090D29AA100A00BDA7E2 /* SAVVY PreProd */,
+				92F1092F29AA103E00BDA7E2 /* SAVVY ProdS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		13B07F8E1A680F5B00A75B9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA52EC22BFCBF050042677A /* www in Resources */,
+				92F1088429A9BDCB00BDA7E2 /* Images.xcassets in Resources */,
+				A2655C1429F78DB600CDD80B /* bundle in Resources */,
+				739424CF2B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key in Resources */,
+				921122B329A76BFA00758EA6 /* Gotham-Bold.otf in Resources */,
+				921122B529A76BFA00758EA6 /* Gotham-Black.otf in Resources */,
+				B77BD8AF2113632C0036B284 /* bootconfig.plist in Resources */,
+				921122B429A76BFA00758EA6 /* Gotham-Book.otf in Resources */,
+				B7168FBE1FACC7EB00A48DB5 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F108B929A9BF7200BDA7E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEA52EC32BFCBF050042677A /* www in Resources */,
+				92F108BB29A9BF7200BDA7E2 /* Images.xcassets in Resources */,
+				A2655C1529F78DB600CDD80B /* bundle in Resources */,
+				739424D02B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key in Resources */,
+				92F108BC29A9BF7200BDA7E2 /* Gotham-Bold.otf in Resources */,
+				92F108BD29A9BF7200BDA7E2 /* Gotham-Black.otf in Resources */,
+				92F108BE29A9BF7200BDA7E2 /* bootconfig.plist in Resources */,
+				92F108BF29A9BF7200BDA7E2 /* Gotham-Book.otf in Resources */,
+				92F108C029A9BF7200BDA7E2 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F108DB29AA0FC400BDA7E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F108DD29AA0FC400BDA7E2 /* Images.xcassets in Resources */,
+				A2655C1629F78DB600CDD80B /* bundle in Resources */,
+				739424D12B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key in Resources */,
+				92F108DE29AA0FC400BDA7E2 /* Gotham-Bold.otf in Resources */,
+				92F108DF29AA0FC400BDA7E2 /* Gotham-Black.otf in Resources */,
+				92F108E029AA0FC400BDA7E2 /* bootconfig.plist in Resources */,
+				92F108E129AA0FC400BDA7E2 /* Gotham-Book.otf in Resources */,
+				92F108E229AA0FC400BDA7E2 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F108FD29AA0FE200BDA7E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F108FF29AA0FE200BDA7E2 /* Images.xcassets in Resources */,
+				A2655C1729F78DB600CDD80B /* bundle in Resources */,
+				739424D22B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key in Resources */,
+				92F1090029AA0FE200BDA7E2 /* Gotham-Bold.otf in Resources */,
+				92F1090129AA0FE200BDA7E2 /* Gotham-Black.otf in Resources */,
+				92F1090229AA0FE200BDA7E2 /* bootconfig.plist in Resources */,
+				92F1090329AA0FE200BDA7E2 /* Gotham-Book.otf in Resources */,
+				92F1090429AA0FE200BDA7E2 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F1091F29AA100A00BDA7E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F1092129AA100A00BDA7E2 /* Images.xcassets in Resources */,
+				A2655C1829F78DB600CDD80B /* bundle in Resources */,
+				739424D32B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key in Resources */,
+				92F1092229AA100A00BDA7E2 /* Gotham-Bold.otf in Resources */,
+				92F1092329AA100A00BDA7E2 /* Gotham-Black.otf in Resources */,
+				92F1092429AA100A00BDA7E2 /* bootconfig.plist in Resources */,
+				92F1092529AA100A00BDA7E2 /* Gotham-Book.otf in Resources */,
+				92F1092629AA100A00BDA7E2 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F1094129AA103E00BDA7E2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F1094329AA103E00BDA7E2 /* Images.xcassets in Resources */,
+				A2655C1929F78DB600CDD80B /* bundle in Resources */,
+				739424D42B9EDAB80036A420 /* ios_licence_pepsico_hamilton.key in Resources */,
+				92F1094429AA103E00BDA7E2 /* Gotham-Bold.otf in Resources */,
+				92F1094529AA103E00BDA7E2 /* Gotham-Black.otf in Resources */,
+				92F1094629AA103E00BDA7E2 /* bootconfig.plist in Resources */,
+				92F1094729AA103E00BDA7E2 /* Gotham-Book.otf in Resources */,
+				92F1094829AA103E00BDA7E2 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../build_multi_bundle.sh\n";
+		};
+		92F108C129A9BF7200BDA7E2 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../build_multi_bundle.sh\n";
+		};
+		92F108E329AA0FC400BDA7E2 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../build_multi_bundle.sh\n";
+		};
+		92F1090529AA0FE200BDA7E2 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../build_multi_bundle.sh\n";
+		};
+		92F1092729AA100A00BDA7E2 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../build_multi_bundle.sh\n";
+		};
+		92F1094929AA103E00BDA7E2 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export NODE_BINARY=node\n../build_multi_bundle.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13B07F871A680F5B00A75B9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				921122C229A76C9B00758EA6 /* RCTMapManager.m in Sources */,
+				73D7CBC92B9567E300A4B975 /* DebugLog.swift in Sources */,
+				A2B956B02A4AC0B600871CF9 /* RCTMultiBundleLoad.m in Sources */,
+				7387411C2B5537D90072434E /* RNTMapstedView.swift in Sources */,
+				73D7CBC32B9567E300A4B975 /* RNTMapstedNavigateView.swift in Sources */,
+				4F3AFF401DC2C79E006FF6B0 /* InitialViewController.m in Sources */,
+				921122C929A76D3700758EA6 /* RCTAppTerminateTime.m in Sources */,
+				921122D129A76D9C00758EA6 /* UtilsManager.m in Sources */,
+				921122C529A76C9B00758EA6 /* RCTFootmarksManager.m in Sources */,
+				921122C329A76C9B00758EA6 /* RCTCatchSystemLog.m in Sources */,
+				921122C429A76C9B00758EA6 /* RCTRefreshToken.m in Sources */,
+				738741162B5537D80072434E /* UIVIew-Extension.swift in Sources */,
+				738741102B5537D80072434E /* RNTMapstedManager.m in Sources */,
+				73D7CBCF2B9567E300A4B975 /* RNTMapstedUIManager.m in Sources */,
+				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				921122CD29A76D4B00758EA6 /* RCTPushNotification.m in Sources */,
+				921122DC29A7BD5300758EA6 /* CompressImageManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F108A929A9BF7200BDA7E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F108AA29A9BF7200BDA7E2 /* RCTMapManager.m in Sources */,
+				73D7CBCA2B9567E300A4B975 /* DebugLog.swift in Sources */,
+				A2B956B12A4AC0B600871CF9 /* RCTMultiBundleLoad.m in Sources */,
+				7387411D2B5537D90072434E /* RNTMapstedView.swift in Sources */,
+				73D7CBC42B9567E300A4B975 /* RNTMapstedNavigateView.swift in Sources */,
+				92F108AB29A9BF7200BDA7E2 /* InitialViewController.m in Sources */,
+				92F108AC29A9BF7200BDA7E2 /* RCTAppTerminateTime.m in Sources */,
+				92F108AD29A9BF7200BDA7E2 /* UtilsManager.m in Sources */,
+				92F108AE29A9BF7200BDA7E2 /* RCTFootmarksManager.m in Sources */,
+				92F108AF29A9BF7200BDA7E2 /* RCTCatchSystemLog.m in Sources */,
+				92F108B029A9BF7200BDA7E2 /* RCTRefreshToken.m in Sources */,
+				738741172B5537D80072434E /* UIVIew-Extension.swift in Sources */,
+				738741112B5537D80072434E /* RNTMapstedManager.m in Sources */,
+				73D7CBD02B9567E300A4B975 /* RNTMapstedUIManager.m in Sources */,
+				92F108B129A9BF7200BDA7E2 /* AppDelegate.m in Sources */,
+				92F108B229A9BF7200BDA7E2 /* main.m in Sources */,
+				92F108B429A9BF7200BDA7E2 /* RCTPushNotification.m in Sources */,
+				92F108B529A9BF7200BDA7E2 /* CompressImageManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F108CB29AA0FC400BDA7E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F108CC29AA0FC400BDA7E2 /* RCTMapManager.m in Sources */,
+				73D7CBCB2B9567E300A4B975 /* DebugLog.swift in Sources */,
+				A2B956B22A4AC0B600871CF9 /* RCTMultiBundleLoad.m in Sources */,
+				7387411E2B5537D90072434E /* RNTMapstedView.swift in Sources */,
+				73D7CBC52B9567E300A4B975 /* RNTMapstedNavigateView.swift in Sources */,
+				92F108CD29AA0FC400BDA7E2 /* InitialViewController.m in Sources */,
+				92F108CE29AA0FC400BDA7E2 /* RCTAppTerminateTime.m in Sources */,
+				92F108CF29AA0FC400BDA7E2 /* UtilsManager.m in Sources */,
+				92F108D029AA0FC400BDA7E2 /* RCTFootmarksManager.m in Sources */,
+				92F108D129AA0FC400BDA7E2 /* RCTCatchSystemLog.m in Sources */,
+				92F108D229AA0FC400BDA7E2 /* RCTRefreshToken.m in Sources */,
+				738741182B5537D80072434E /* UIVIew-Extension.swift in Sources */,
+				738741122B5537D80072434E /* RNTMapstedManager.m in Sources */,
+				73D7CBD12B9567E300A4B975 /* RNTMapstedUIManager.m in Sources */,
+				92F108D329AA0FC400BDA7E2 /* AppDelegate.m in Sources */,
+				92F108D429AA0FC400BDA7E2 /* main.m in Sources */,
+				92F108D629AA0FC400BDA7E2 /* RCTPushNotification.m in Sources */,
+				92F108D729AA0FC400BDA7E2 /* CompressImageManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F108ED29AA0FE200BDA7E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F108EE29AA0FE200BDA7E2 /* RCTMapManager.m in Sources */,
+				73D7CBCC2B9567E300A4B975 /* DebugLog.swift in Sources */,
+				A2B956B32A4AC0B600871CF9 /* RCTMultiBundleLoad.m in Sources */,
+				7387411F2B5537D90072434E /* RNTMapstedView.swift in Sources */,
+				73D7CBC62B9567E300A4B975 /* RNTMapstedNavigateView.swift in Sources */,
+				92F108EF29AA0FE200BDA7E2 /* InitialViewController.m in Sources */,
+				92F108F029AA0FE200BDA7E2 /* RCTAppTerminateTime.m in Sources */,
+				92F108F129AA0FE200BDA7E2 /* UtilsManager.m in Sources */,
+				92F108F229AA0FE200BDA7E2 /* RCTFootmarksManager.m in Sources */,
+				92F108F329AA0FE200BDA7E2 /* RCTCatchSystemLog.m in Sources */,
+				92F108F429AA0FE200BDA7E2 /* RCTRefreshToken.m in Sources */,
+				738741192B5537D80072434E /* UIVIew-Extension.swift in Sources */,
+				738741132B5537D80072434E /* RNTMapstedManager.m in Sources */,
+				73D7CBD22B9567E300A4B975 /* RNTMapstedUIManager.m in Sources */,
+				92F108F529AA0FE200BDA7E2 /* AppDelegate.m in Sources */,
+				92F108F629AA0FE200BDA7E2 /* main.m in Sources */,
+				92F108F829AA0FE200BDA7E2 /* RCTPushNotification.m in Sources */,
+				92F108F929AA0FE200BDA7E2 /* CompressImageManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F1090F29AA100A00BDA7E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F1091029AA100A00BDA7E2 /* RCTMapManager.m in Sources */,
+				73D7CBCD2B9567E300A4B975 /* DebugLog.swift in Sources */,
+				A2B956B42A4AC0B600871CF9 /* RCTMultiBundleLoad.m in Sources */,
+				738741202B5537D90072434E /* RNTMapstedView.swift in Sources */,
+				73D7CBC72B9567E300A4B975 /* RNTMapstedNavigateView.swift in Sources */,
+				92F1091129AA100A00BDA7E2 /* InitialViewController.m in Sources */,
+				92F1091229AA100A00BDA7E2 /* RCTAppTerminateTime.m in Sources */,
+				92F1091329AA100A00BDA7E2 /* UtilsManager.m in Sources */,
+				92F1091429AA100A00BDA7E2 /* RCTFootmarksManager.m in Sources */,
+				92F1091529AA100A00BDA7E2 /* RCTCatchSystemLog.m in Sources */,
+				92F1091629AA100A00BDA7E2 /* RCTRefreshToken.m in Sources */,
+				7387411A2B5537D80072434E /* UIVIew-Extension.swift in Sources */,
+				738741142B5537D80072434E /* RNTMapstedManager.m in Sources */,
+				73D7CBD32B9567E300A4B975 /* RNTMapstedUIManager.m in Sources */,
+				92F1091729AA100A00BDA7E2 /* AppDelegate.m in Sources */,
+				92F1091829AA100A00BDA7E2 /* main.m in Sources */,
+				92F1091A29AA100A00BDA7E2 /* RCTPushNotification.m in Sources */,
+				92F1091B29AA100A00BDA7E2 /* CompressImageManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92F1093129AA103E00BDA7E2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92F1093229AA103E00BDA7E2 /* RCTMapManager.m in Sources */,
+				73D7CBCE2B9567E300A4B975 /* DebugLog.swift in Sources */,
+				A2B956B52A4AC0B600871CF9 /* RCTMultiBundleLoad.m in Sources */,
+				738741212B5537D90072434E /* RNTMapstedView.swift in Sources */,
+				73D7CBC82B9567E300A4B975 /* RNTMapstedNavigateView.swift in Sources */,
+				92F1093329AA103E00BDA7E2 /* InitialViewController.m in Sources */,
+				92F1093429AA103E00BDA7E2 /* RCTAppTerminateTime.m in Sources */,
+				92F1093529AA103E00BDA7E2 /* UtilsManager.m in Sources */,
+				92F1093629AA103E00BDA7E2 /* RCTFootmarksManager.m in Sources */,
+				92F1093729AA103E00BDA7E2 /* RCTCatchSystemLog.m in Sources */,
+				92F1093829AA103E00BDA7E2 /* RCTRefreshToken.m in Sources */,
+				7387411B2B5537D80072434E /* UIVIew-Extension.swift in Sources */,
+				738741152B5537D80072434E /* RNTMapstedManager.m in Sources */,
+				73D7CBD42B9567E300A4B975 /* RNTMapstedUIManager.m in Sources */,
+				92F1093929AA103E00BDA7E2 /* AppDelegate.m in Sources */,
+				92F1093A29AA103E00BDA7E2 /* main.m in Sources */,
+				92F1093C29AA103E00BDA7E2 /* RCTPushNotification.m in Sources */,
+				92F1093D29AA103E00BDA7E2 /* CompressImageManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SAVVY/SAVVY.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3.7.0;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZC57NK3G6A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"SD_WEBP=1",
+					"$(inherited)",
+					"SQLITE_HAS_CODEC=1",
+					"SAVVY=SAVVY",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = SAVVY/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SAVVY;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.7.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepsico.HALOCRM;
+				PRODUCT_NAME = SAVVY;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "202212_ENT3_ HALOCRMDEV";
+				SWIFT_OBJC_BRIDGING_HEADER = "SAVVY-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		13B07F951A680F5B00A75B9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SAVVY/SAVVY.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3.7.0;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZC57NK3G6A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"SD_WEBP=1",
+					"$(inherited)",
+					"SQLITE_HAS_CODEC=1",
+					"SAVVY=SAVVY",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = SAVVY/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = SAVVY;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.7.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepsico.HALOCRM;
+				PRODUCT_NAME = SAVVY;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "202212_ENT3_ HALOCRMDEV";
+				SWIFT_OBJC_BRIDGING_HEADER = "SAVVY-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		83CBBA201A601CBA00E9B192 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		83CBBA211A601CBA00E9B192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92F108C529A9BF7200BDA7E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SAVVY/SAVVY.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.2.454;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZC57NK3G6A;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"SD_WEBP=1",
+					"$(inherited)",
+					"SQLITE_HAS_CODEC=1",
+					"SAVVY_Dev=SAVVY_Dev",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = "SAVVY Dev-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SAVVY Dev";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.454;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PepsiCo.HALOCRMDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "202401_ENT3_ HALOCRMDEV";
+				SWIFT_OBJC_BRIDGING_HEADER = "SAVVY-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		92F108C629A9BF7200BDA7E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SAVVY/SAVVY.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.2.454;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZC57NK3G6A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"SD_WEBP=1",
+					"$(inherited)",
+					"SQLITE_HAS_CODEC=1",
+					"SAVVY_Dev=SAVVY_Dev",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = "SAVVY Dev-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SAVVY Dev";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.454;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.PepsiCo.HALOCRMDev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "202401_ENT3_ HALOCRMDEV";
+				SWIFT_OBJC_BRIDGING_HEADER = "SAVVY-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		92F108E729AA0FC400BDA7E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SAVVY/SAVVY.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3.3.20;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZC57NK3G6A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"SD_WEBP=1",
+					"$(inherited)",
+					"SQLITE_HAS_CODEC=1",
+					"SAVVY_QA=SAVVY_QA",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = "SAVVY QA-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.3.20;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepsico.HALOCRMFit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = 202305_ENT3_HALOCRMFit;
+				SWIFT_OBJC_BRIDGING_HEADER = "SAVVY-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		92F108E829AA0FC400BDA7E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SAVVY/SAVVY.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3.3.20;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZC57NK3G6A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"SD_WEBP=1",
+					"$(inherited)",
+					"SQLITE_HAS_CODEC=1",
+					"SAVVY_QA=SAVVY_QA",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = "SAVVY QA-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.3.20;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepsico.HALOCRMFit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = 202305_ENT3_HALOCRMFit;
+				SWIFT_OBJC_BRIDGING_HEADER = "SAVVY-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		92F1090929AA0FE200BDA7E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SAVVY/SAVVY.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"SD_WEBP=1",
+					"$(inherited)",
+					"SQLITE_HAS_CODEC=1",
+					"SAVVY_UAT=SAVVY_UAT",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = "SAVVY UAT-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepsico.HALOCRMUAT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SAVVY-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		92F1090A29AA0FE200BDA7E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SAVVY/SAVVY.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"SD_WEBP=1",
+					"$(inherited)",
+					"SQLITE_HAS_CODEC=1",
+					"SAVVY_UAT=SAVVY_UAT",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = "SAVVY UAT-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepsico.HALOCRMUAT;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SAVVY-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		92F1092B29AA100A00BDA7E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SAVVY/SAVVY.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3.3.0;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZC57NK3G6A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"SD_WEBP=1",
+					"$(inherited)",
+					"SQLITE_HAS_CODEC=1",
+					"SAVVY_PreProd=SAVVY_PreProd",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = "SAVVY PreProd-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.3.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepsico.HALOCRMPreProd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = 202305_ENT3_HALOCRMPreProd;
+				SWIFT_OBJC_BRIDGING_HEADER = "SAVVY-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		92F1092C29AA100A00BDA7E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SAVVY/SAVVY.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 3.3.0;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ZC57NK3G6A;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"SD_WEBP=1",
+					"$(inherited)",
+					"SQLITE_HAS_CODEC=1",
+					"SAVVY_PreProd=SAVVY_PreProd",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = "SAVVY PreProd-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.3.0;
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepsico.HALOCRMPreProd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = 202305_ENT3_HALOCRMPreProd;
+				SWIFT_OBJC_BRIDGING_HEADER = "SAVVY-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		92F1094D29AA103E00BDA7E2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SAVVY/SAVVY.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"SD_WEBP=1",
+					"$(inherited)",
+					"SQLITE_HAS_CODEC=1",
+					"SAVVY_ProdS=SAVVY_ProdS",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = "SAVVY ProdS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepsico.HALOCRMProdS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SAVVY-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		92F1094E29AA103E00BDA7E2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SAVVY/SAVVY.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(inherited)",
+					"SD_WEBP=1",
+					"$(inherited)",
+					"SQLITE_HAS_CODEC=1",
+					"SAVVY_ProdS=SAVVY_ProdS",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/../node_modules/react-native/React/**",
+				);
+				INFOPLIST_FILE = "SAVVY ProdS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pepsico.HALOCRMProdS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SAVVY-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "SAVVY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13B07F941A680F5B00A75B9A /* Debug */,
+				13B07F951A680F5B00A75B9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "SAVVY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83CBBA201A601CBA00E9B192 /* Debug */,
+				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F108C429A9BF7200BDA7E2 /* Build configuration list for PBXNativeTarget "SAVVY Dev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F108C529A9BF7200BDA7E2 /* Debug */,
+				92F108C629A9BF7200BDA7E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F108E629AA0FC400BDA7E2 /* Build configuration list for PBXNativeTarget "SAVVY QA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F108E729AA0FC400BDA7E2 /* Debug */,
+				92F108E829AA0FC400BDA7E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F1090829AA0FE200BDA7E2 /* Build configuration list for PBXNativeTarget "SAVVY UAT" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F1090929AA0FE200BDA7E2 /* Debug */,
+				92F1090A29AA0FE200BDA7E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F1092A29AA100A00BDA7E2 /* Build configuration list for PBXNativeTarget "SAVVY PreProd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F1092B29AA100A00BDA7E2 /* Debug */,
+				92F1092C29AA100A00BDA7E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92F1094C29AA103E00BDA7E2 /* Build configuration list for PBXNativeTarget "SAVVY ProdS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92F1094D29AA103E00BDA7E2 /* Debug */,
+				92F1094E29AA103E00BDA7E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83CBB9F71A601CBA00E9B192 /* Project object */;
+}

@@ -1,0 +1,28 @@
+{
+  "rules": [
+    {
+      "name": "URL",
+      "pattern": "^(?!\\s*\\/\\/|\\s*\\*).*\\b(http:\/\/|https:\/\/|www|ftp:\/\/)\\S+"
+    },
+    {
+      "name": "Salesforce ID",
+      "pattern": "\\b[a-z0-9]\\w{4}0\\w{12}|[a-z0-9]\\w{4}0\\w{9}\\b"
+    }
+  ],
+  "disable_rules_blacklist": [
+  ],
+  "include_types_whitelist": [
+    "cls"
+  ],
+  "exclude_files_blacklist": [
+  ],
+  "exclude_folders_blacklist": [
+    ".sfdx",
+    ".git",
+    ".sf",
+    ".vscode",
+    ".idea",
+    ".husky",
+    ".github"
+  ]
+}

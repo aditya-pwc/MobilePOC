@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-location-add-new-visit SVG</title>
+    <defs>
+        <circle id="path-1" cx="18" cy="18" r="18"></circle>
+        <filter x="-19.4%" y="-13.9%" width="138.9%" height="138.9%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.166111233 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_checkmark_circle-copy">
+            <g id="Oval">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <circle stroke="#FFFFFF" stroke-width="2" stroke-linejoin="square" fill="#000000" fill-rule="evenodd" cx="18" cy="18" r="17"></circle>
+            </g>
+            <path d="M18,9 C13.7401714,9 10.2857143,12.29625 10.2857143,16.36125 C10.2857143,20.49 13.6607143,23.31225 18,27 C22.3392857,23.31225 25.7142857,20.49 25.7142857,16.36125 C25.7142857,12.29625 22.2598286,9 18,9 Z M18,19.2692308 C16.4266418,19.2692308 15.1516484,18.0293077 15.1516484,16.5 C15.1516484,14.9706923 16.4266418,13.7307692 18,13.7307692 C19.5733582,13.7307692 20.8483516,14.9706923 20.8483516,16.5 C20.8483516,18.0293077 19.5733582,19.2692308 18,19.2692308 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>

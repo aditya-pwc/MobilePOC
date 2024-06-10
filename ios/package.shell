@@ -1,0 +1,50 @@
+Project_Name="SAVVY"
+Workspace_Name="SAVVY"
+BuildPath="../../SAVVY-iOS-IPA"
+Scheme_Name=SAVVY\ Dev
+Package_Name=SAVVY\ Dev
+Diawi_Token=$1
+
+startTime_s=`date +%s`
+ipaName=$Project_Name-$(date "+%m%d-%H%M")
+archivePath="$BuildPath/archive"
+exportPath=$BuildPath/build/$ipaName
+# exportOptionsPlist=$BuildPath/ExportOptions.plist
+exportOptionsPlist=./ExportOptions.plist
+workspace=./$Workspace_Name.xcworkspace
+scheme="$Scheme_Name"
+Configuration="Release"
+
+# clean
+xcodebuild clean -workspace $workspace -scheme "$scheme" -configuration $Configuration
+
+# archive
+xcodebuild archive -workspace $workspace -scheme "$scheme" -archivePath $archivePath
+
+# export
+xcodebuild -exportArchive -archivePath $archivePath.xcarchive -exportPath $exportPath -exportOptionsPlist $exportOptionsPlist
+
+# rename
+mv "$exportPath/$Package_Name.ipa" $exportPath/$ipaName.ipa
+
+endTime_s=`date +%s`
+sumTime=$[ $endTime_s - $startTime_s ]
+minutes=`expr $sumTime / 60`
+seconds=`expr $sumTime % 60`
+timeDuration="$minutes min $seconds sec"
+
+echo "PACKAGED SUCCESSFULLY!"
+echo "DURATION TIME: $timeDuration"
+echo "IPA FILE IS HERE: $exportPath/$ipaName.ipa"
+
+# upload
+uploadResult="$(curl --http1.1 https://upload.diawi.com/ -F token=$Diawi_Token -F file=@$exportPath/$ipaName.ipa)" 
+echo $uploadResult
+jobId=$(echo $uploadResult | python3 -c "import sys, json; print (json.load(sys.stdin)['job'])")
+
+# check upload status
+jobResult="$(curl "https://upload.diawi.com/status?job=$jobId&token=$Diawi_Token")"
+echo $jobResult
+ipaLink=$(echo $jobResult | python3 -c "import sys, json; print (json.load(sys.stdin)['link'])")
+echo $ipaLink
+say "DONE"

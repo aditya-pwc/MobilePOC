@@ -1,0 +1,11 @@
+#!/bin/sh
+
+exec 1>&2
+HERE="$(dirname "$0")"
+if [ "$(uname)" = "Darwin" ]; then
+    PYTHON_CMD="python3"
+else
+    PYTHON_CMD="python"
+fi
+
+exec "$PYTHON_CMD" "$HERE/hard-coded-scanner.py"

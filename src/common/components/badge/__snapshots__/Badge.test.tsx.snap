@@ -1,0 +1,263 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge green renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "height": 20,
+        "justifyContent": "center",
+        "paddingHorizontal": 7,
+      },
+      Object {
+        "backgroundColor": "#2DD36F",
+      },
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "fontFamily": "Gotham-Book",
+        },
+        Array [
+          Object {
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#FFFFFF",
+          },
+        ],
+      ]
+    }
+  >
+    test
+  </Text>
+</View>
+`;
+
+exports[`Badge green_outline renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "height": 20,
+        "justifyContent": "center",
+        "paddingHorizontal": 7,
+      },
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#565656",
+        "borderWidth": 1,
+      },
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "fontFamily": "Gotham-Book",
+        },
+        Array [
+          Object {
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#565656",
+          },
+        ],
+      ]
+    }
+  >
+    test
+  </Text>
+</View>
+`;
+
+exports[`Badge grey renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "height": 20,
+        "justifyContent": "center",
+        "paddingHorizontal": 7,
+      },
+      Object {
+        "backgroundColor": "#D3D3D3",
+      },
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "fontFamily": "Gotham-Book",
+        },
+        Array [
+          Object {
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#565656",
+          },
+        ],
+      ]
+    }
+  >
+    test
+  </Text>
+</View>
+`;
+
+exports[`Badge grey_outline renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "height": 20,
+        "justifyContent": "center",
+        "paddingHorizontal": 7,
+      },
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "borderColor": "#2DD36F",
+        "borderWidth": 1,
+      },
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "fontFamily": "Gotham-Book",
+        },
+        Array [
+          Object {
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#2DD36F",
+          },
+        ],
+      ]
+    }
+  >
+    test
+  </Text>
+</View>
+`;
+
+exports[`Badge red renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "height": 20,
+        "justifyContent": "center",
+        "paddingHorizontal": 7,
+      },
+      Object {
+        "backgroundColor": "#EB445A",
+      },
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "fontFamily": "Gotham-Book",
+        },
+        Array [
+          Object {
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#FFFFFF",
+          },
+        ],
+      ]
+    }
+  >
+    test
+  </Text>
+</View>
+`;
+
+exports[`Badge yellow renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "alignItems": "center",
+        "borderRadius": 10,
+        "flexDirection": "row",
+        "height": 20,
+        "justifyContent": "center",
+        "paddingHorizontal": 7,
+      },
+      Object {
+        "backgroundColor": "#FFC409",
+      },
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      Array [
+        Object {
+          "fontFamily": "Gotham-Book",
+        },
+        Array [
+          Object {
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "textTransform": "uppercase",
+          },
+          Object {
+            "color": "#000000",
+          },
+        ],
+      ]
+    }
+  >
+    test
+  </Text>
+</View>
+`;

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="45px" height="22px" viewBox="0 0 45 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>New_Merchandiser</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="New_Merchandiser">
+            <path d="M44,1 L44,2 C44,7.24670512 41.8733526,11.9967051 38.4350288,15.4350288 C34.9967051,18.8733526 30.2467051,21 25,21 L25,21 L1,21 L1,6 C1,4.61928813 1.55964406,3.36928813 2.46446609,2.46446609 C3.36928813,1.55964406 4.61928813,1 6,1 L6,1 L44,1 Z" id="Rectangle" stroke="#2DD36F" stroke-width="2"></path>
+            <text id="New" font-family="Gotham-Bold, Gotham" font-size="12" font-weight="bold" fill="#2DD36F">
+                <tspan x="5.008" y="15">NEW</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

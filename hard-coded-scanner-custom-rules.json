@@ -1,0 +1,14 @@
+{
+    "disable_rules_blacklist": [],
+    "exclude_files_blacklist": ["**/classes/**/*Test.cls"],
+    "exclude_folders_blacklist": [],
+    "exclude_strings_blacklist": [],
+    "include_types_whitelist": ["ts", "tsx"],
+    "rules": [
+        {
+            "name": "CUSTOM_RULE",
+            "pattern": "CUSTOM_REGEX"
+        }
+    ],
+    "switch_off": false
+}

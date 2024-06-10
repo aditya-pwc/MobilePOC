@@ -1,0 +1,11 @@
+framework module FTMCore {
+  umbrella header "FTMCore.h"
+
+  export *
+  module * { export * }
+}
+
+module FTMCore.Swift {
+    header "FTMCore-Swift.h"
+    requires objc
+}

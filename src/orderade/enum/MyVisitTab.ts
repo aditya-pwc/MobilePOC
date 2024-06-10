@@ -1,0 +1,10 @@
+export enum MyVisitTab {
+    MY_VISIT = 'MY VISIT',
+    SALES_SNAPSHOT = 'SALES SNAPSHOT',
+    MY_STORE = 'MY STORE',
+    ACTIVITIES = 'ACTIVITIES',
+    EQUIPMENT = 'EQUIPMENT',
+    CONTACTS = 'CONTACTS',
+    PROFILE = 'PROFILE',
+    POS = 'POS'
+}

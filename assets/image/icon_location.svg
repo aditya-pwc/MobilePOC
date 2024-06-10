@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="21px" viewBox="0 0 18 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon_location</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Rockstar-Execution_VD_Today's-Visit-Schedule---List-View" transform="translate(-368.000000, -303.000000)" fill="currentColor" fill-rule="nonzero">
+            <g id="Store-Tile-" transform="translate(22.000000, 240.000000)">
+                <path d="M355,63 C350.0302,63 346,66.845625 346,71.588125 C346,76.405 349.9375,79.697625 355,84 C360.0625,79.697625 364,76.405 364,71.588125 C364,66.845625 359.9698,63 355,63 Z M355,74.9807692 C353.164415,74.9807692 351.676923,73.5341923 351.676923,71.75 C351.676923,69.9658077 353.164415,68.5192308 355,68.5192308 C356.835585,68.5192308 358.323077,69.9658077 358.323077,71.75 C358.323077,73.5341923 356.835585,74.9807692 355,74.9807692 Z" id="icon_location"></path>
+            </g>
+        </g>
+    </g>
+</svg>

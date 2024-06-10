@@ -1,0 +1,14 @@
+{
+  "rules": [
+    {
+      "name": "CUSTOM_RULE",
+      "pattern": "CUSTOM_REGEX"
+    }
+  ],
+  "disable_rules_blacklist": [],
+  "include_types_whitelist": [],
+  "exclude_files_blacklist": ["**/classes/**/*Test.cls"],
+  "exclude_strings_blacklist": [],
+  "exclude_folders_blacklist": [],
+  "switch_off": false
+}

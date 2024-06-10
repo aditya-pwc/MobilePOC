@@ -1,0 +1,278 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)
+// swift-module-flags: -target armv7-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name FTMCore
+import AdSupport
+import CoreBluetooth
+import CoreLocation
+import CoreNFC
+@_exported import FTMCore
+import Foundation
+import Swift
+import UIKit
+import os
+@objc @_hasMissingDesignatedInitializers public class FTMBeacon : ObjectiveC.NSObject {
+  @objc public var accuracy: CoreLocation.CLLocationAccuracy {
+    @objc get
+  }
+  @objc final public let attributes: [Swift.String : Swift.String]
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
+  @objc final public let id: Swift.String
+  @objc final public let macAddress: Swift.String
+  @objc final public let name: Swift.String
+  @objc public var proximity: CoreLocation.CLProximity {
+    @objc get
+  }
+  @objc public var rssi: Swift.Int {
+    @objc get
+  }
+  public static func == (lhs: FTMCore.FTMBeacon, rhs: FTMCore.FTMBeacon) -> Swift.Bool
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers public class FTMNearestPeripheralRequest : ObjectiveC.NSObject {
+  @discardableResult
+  @objc public class func begin(completion: @escaping (FTMCore.FTMNearestPeripheralResult?, Swift.Error?) -> Swift.Void) -> FTMCore.FTMRequestHandle
+  @discardableResult
+  @objc public class func begin(attributeFilterKey: Swift.String, attributeFilterValue: Swift.String, completion: @escaping (FTMCore.FTMNearestPeripheralResult?, Swift.Error?) -> Swift.Void) -> FTMCore.FTMRequestHandle
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public protocol FTMBeaconManagerDelegate : AnyObject {
+  @objc optional func beaconManagerDidChangeLocationManagerAuthorizationStatus()
+  @objc func beaconManagerDidFail(error: Swift.Error)
+  @objc func beaconManagerDidRangeBeacons()
+  @objc optional func beaconManagerDidUpdateCentralManagerState()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class FTMBeaconManager : ObjectiveC.NSObject {
+  @objc public class var beacons: Swift.Set<FTMCore.FTMBeacon> {
+    @objc get
+  }
+  @objc public class var centralManagerState: CoreBluetooth.CBManagerState {
+    @objc get
+  }
+  @objc weak public static var delegate: FTMCore.FTMBeaconManagerDelegate?
+  @objc deinit
+}
+@objc @frozen public enum FTMExperienceAction : Swift.Int {
+  case automated
+  case clicked
+  case listened
+  case none
+  case opened
+  case retargeted
+  case shared
+  case swiped
+  case watched
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @frozen public enum FTMExperienceEngagement : Swift.Int {
+  case autoShow
+  case passive
+  case prompt
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @frozen public enum FTMExperienceType : Swift.Int {
+  case alert
+  case custom
+  case html
+  case image
+  case url
+  case video
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @frozen public enum FTMExperienceValueType : Swift.Int {
+  case currency
+  case minutes
+  case quantity
+  case seconds
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @frozen public enum FTMGlobalRegion : Swift.Int {
+  case northAmerica = 0
+  case europe = 1
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class FTMNearestBeaconAcknowledgment : ObjectiveC.NSObject {
+  @discardableResult
+  @objc public class func send(resultID: Swift.String, attributeKey: Swift.String, attributeValue: Swift.String, completion: ((Swift.Error?) -> Swift.Void)?) -> FTMCore.FTMRequestHandle
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_hasMissingDesignatedInitializers @available(iOS 11.0, *)
+public class FTMNFCTag : ObjectiveC.NSObject {
+  @objc final public let attributes: [Swift.String : Swift.String]
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
+  @objc final public let id: Swift.String
+  @objc final public let name: Swift.String
+  @objc final public let url: Foundation.URL
+  public static func == (lhs: FTMCore.FTMNFCTag, rhs: FTMCore.FTMNFCTag) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class FTMPeripheralManager : ObjectiveC.NSObject {
+  @objc public class var peripherals: Swift.Set<FTMCore.FTMPeripheral> {
+    @objc get
+  }
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers public class FTMNearestBeaconRequest : ObjectiveC.NSObject {
+  @discardableResult
+  @objc public class func begin(completion: @escaping (FTMCore.FTMNearestBeaconResult?, Swift.Error?) -> Swift.Void) -> FTMCore.FTMRequestHandle
+  @discardableResult
+  @objc public class func begin(attributeFilterKey: Swift.String, attributeFilterValue: Swift.String, completion: @escaping (FTMCore.FTMNearestBeaconResult?, Swift.Error?) -> Swift.Void) -> FTMCore.FTMRequestHandle
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_hasMissingDesignatedInitializers public class FTMNearestPeripheralResult : ObjectiveC.NSObject {
+  @objc final public let confidence: Swift.Double
+  @objc final public let id: Swift.String
+  @objc final public let peripheral: FTMCore.FTMPeripheral
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers public class FTMPeripheral : ObjectiveC.NSObject {
+  @objc public var accuracy: CoreLocation.CLLocationAccuracy {
+    @objc get
+  }
+  @objc final public let attributes: [Swift.String : Swift.String]
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
+  @objc final public let id: Swift.String
+  @objc final public let macAddress: Swift.String
+  @objc public var rssi: Swift.Int {
+    @objc get
+  }
+  public static func == (lhs: FTMCore.FTMPeripheral, rhs: FTMCore.FTMPeripheral) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol FTMExperienceManagerDelegate : AnyObject {
+  @objc func experienceManagerDidReceiveExperiences(_ experiences: Swift.Set<FTMCore.FTMExperience>)
+}
+@objc @_inheritsConvenienceInitializers public class FTMExperienceManager : ObjectiveC.NSObject {
+  @objc weak public static var delegate: FTMCore.FTMExperienceManagerDelegate?
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_hasMissingDesignatedInitializers public class FTMExperience : ObjectiveC.NSObject, Foundation.NSSecureCoding {
+  @objc final public let attributes: [Swift.String : Swift.String]
+  @objc final public let content: Swift.String
+  @objc final public let engagement: FTMCore.FTMExperienceEngagement
+  @objc final public let experienceType: FTMCore.FTMExperienceType
+  @objc override dynamic public var hash: Swift.Int {
+    @objc get
+  }
+  @objc final public let name: Swift.String
+  @objc final public let promptDescription: Swift.String
+  @objc final public let promptTitle: Swift.String
+  @objc public static var supportsSecureCoding: Swift.Bool
+  @objc required convenience public init?(coder decoder: Foundation.NSCoder)
+  public static func == (lhs: FTMCore.FTMExperience, rhs: FTMCore.FTMExperience) -> Swift.Bool
+  @objc public func encode(with encoder: Foundation.NSCoder)
+  @discardableResult
+  @objc public func sendConversion(action: FTMCore.FTMExperienceAction, valueType: FTMCore.FTMExperienceValueType, value: Swift.Double, completion: ((Swift.Error?) -> Swift.Void)?) -> FTMCore.FTMRequestHandle
+  @discardableResult
+  @objc public func sendConversion(customActionName: Swift.String, customValueName: Swift.String, value: Swift.Double, completion: ((Swift.Error?) -> Swift.Void)?) -> FTMCore.FTMRequestHandle
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_hasMissingDesignatedInitializers public class FTMNearestBeaconResult : ObjectiveC.NSObject {
+  @objc final public let beacon: FTMCore.FTMBeacon
+  @objc final public let confidence: Swift.Double
+  @objc final public let id: Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @frozen public enum FTMError : Swift.Int {
+  case appKeyOrSecretMissing
+  case authFailed
+  case bluetoothAlwaysUsageDescriptionMissing
+  case bluetoothPeripheralUsageDescriptionMissing
+  case cannotHandleNFCMessages
+  case locationAlwaysAndWhenInUseUsageDescriptionMissing
+  case locationAlwaysUsageDescriptionMissing
+  case locationServicesDenied
+  case locationServicesDisabled
+  case locationWhenInUseUsageDescriptionMissing
+  case parameter
+  case webServiceGeneric
+  public static let domain: Swift.String
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class FTMRequestHandle : ObjectiveC.NSObject {
+  @objc deinit
+  @objc public func cancel()
+}
+@objc @_inheritsConvenienceInitializers public class FTMSendPushTokenRequest : ObjectiveC.NSObject {
+  @discardableResult
+  @objc public class func begin(deviceToken: Foundation.Data, completion: ((Swift.Error?) -> Swift.Void)?) -> FTMCore.FTMRequestHandle
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 11.0, *)
+public class FTMNFCHandleMessagesRequest : ObjectiveC.NSObject {
+  @discardableResult
+  @objc public class func begin(messages: [CoreNFC.NFCNDEFMessage], completion: ((FTMCore.FTMNFCTag?, Swift.Error?) -> Swift.Void)?) -> FTMCore.FTMRequestHandle
+  public class func canHandleMessages(_ messages: [CoreNFC.NFCNDEFMessage]) -> Swift.Bool
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers public class FTMSession : ObjectiveC.NSObject {
+  @objc public class var isSignedIn: Swift.Bool {
+    @objc get
+  }
+  @discardableResult
+  @objc public class func deleteSessionAndUserData(completion: ((Swift.Error?) -> Swift.Void)?) -> FTMCore.FTMRequestHandle
+  @discardableResult
+  @objc(signInWithAppKey:appSecret:globalRegion:username:completion:) public class func signIn(appKey: Swift.String, appSecret: Swift.String, globalRegion: FTMCore.FTMGlobalRegion, username: Swift.String?, completion: @escaping (Swift.Error?) -> Swift.Void) -> FTMCore.FTMRequestHandle
+  @objc public class func signOut()
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension FTMCore.FTMExperienceAction : Swift.Equatable {}
+extension FTMCore.FTMExperienceAction : Swift.Hashable {}
+extension FTMCore.FTMExperienceAction : Swift.RawRepresentable {}
+extension FTMCore.FTMExperienceEngagement : Swift.Equatable {}
+extension FTMCore.FTMExperienceEngagement : Swift.Hashable {}
+extension FTMCore.FTMExperienceEngagement : Swift.RawRepresentable {}
+extension FTMCore.FTMExperienceType : Swift.Equatable {}
+extension FTMCore.FTMExperienceType : Swift.Hashable {}
+extension FTMCore.FTMExperienceType : Swift.RawRepresentable {}
+extension FTMCore.FTMExperienceValueType : Swift.Equatable {}
+extension FTMCore.FTMExperienceValueType : Swift.Hashable {}
+extension FTMCore.FTMExperienceValueType : Swift.RawRepresentable {}
+extension FTMCore.FTMGlobalRegion : Swift.Equatable {}
+extension FTMCore.FTMGlobalRegion : Swift.Hashable {}
+extension FTMCore.FTMGlobalRegion : Swift.RawRepresentable {}
+extension FTMCore.FTMError : Swift.Equatable {}
+extension FTMCore.FTMError : Swift.Hashable {}
+extension FTMCore.FTMError : Swift.RawRepresentable {}

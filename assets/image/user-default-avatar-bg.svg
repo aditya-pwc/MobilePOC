@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group</title>
+    <defs>
+        <linearGradient x1="82.9429354%" y1="18.4191475%" x2="13.7462862%" y2="84.2073657%" id="linearGradient-1">
+            <stop stop-color="#6C0CC3" offset="0%"></stop>
+            <stop stop-color="#00A2D9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="New-Updates---WIP" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="22" transform="translate(-1075.000000, -442.000000)">
+            <g id="Group" transform="translate(1075.000000, 442.000000)">
+                <rect id="Rectangle-Copy" fill="#FFFFFF" x="0" y="0" width="40" height="40" rx="8"></rect>
+                <g id="Group-2" fill="url(#linearGradient-1)" opacity="0.65">
+                    <rect id="Rectangle-Copy" x="0" y="0" width="40" height="40" rx="8"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

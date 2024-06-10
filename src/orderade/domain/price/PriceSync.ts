@@ -1,0 +1,291 @@
+/* eslint-disable camelcase */
+import _ from 'lodash'
+import BaseInstance from '../../../common/BaseInstance'
+import { CommonParam } from '../../../common/CommonParam'
+import { Log } from '../../../common/enums/Log'
+import { storeClassLog } from '../../../common/utils/LogUtils'
+import { BCDAccessType } from '../../enum/Common'
+import ErrorUtils from 'common-mobile-lib/@common-mobile-lib/base-utils/src/ErrorUtils'
+import { batchSynDown, syncDownCSV } from '../../utils/CommonUtil'
+import { getIdClause } from '../../../common/utils/CommonUtils'
+import { SFRecord } from 'common-mobile-lib/@common-mobile-lib/sf-soup-engine/src/SfSoupInterface'
+
+export default class PriceSync {
+    static async getPriceBookName() {
+        try {
+            const res = await BaseInstance.sfHttpClient.callData(
+                `query/?q=SELECT Value__c FROM Application_Configuration__mdt WHERE Type__c = 'Mobile' AND DeveloperName = '${BCDAccessType.PBNAPriceBook}'`,
+                'GET'
+            )
+            if (Array.isArray(res?.data?.records) && !_.isEmpty(res?.data?.records)) {
+                CommonParam.priceBookName = res?.data?.records[0].Value__c
+            }
+        } catch (err) {
+            storeClassLog(
+                Log.MOBILE_ERROR,
+                'getPriceBookName',
+                'getPriceBookName Fail: ' + ErrorUtils.error2String(err)
+            )
+        }
+    }
+
+    static async syncDownPriceBookEntryData(pricebookEntrySyncFields: string[], productData: SFRecord[]) {
+        try {
+            if (_.isEmpty(CommonParam.priceBookName)) {
+                await PriceSync.getPriceBookName()
+            }
+            if (Array.isArray(productData) && !_.isEmpty(productData) && !_.isEmpty(CommonParam.priceBookName)) {
+                const prodIds = _.uniq(productData.map((el) => el.Id))
+                await batchSynDown(prodIds, {
+                    name: 'PricebookEntry',
+                    whereClause: `Pricebook2.Name='${CommonParam.priceBookName}' AND Product2Id IN {BatchIds} AND IsActive = TRUE`,
+                    updateLocalSoup: true,
+                    fields: pricebookEntrySyncFields,
+                    allOrNone: true
+                })
+            }
+        } catch (e) {
+            storeClassLog(
+                Log.MOBILE_ERROR,
+                'fetchPriceBookEntryData',
+                'fetchPriceBookEntryData failed' + ErrorUtils.error2String(e)
+            )
+        }
+    }
+
+    static async syncDownDealProductListByAPI(inventoryIds: string[], buId: string, dealProductListFields: string[]) {
+        const dealProductListChunks = await batchSynDown(inventoryIds, {
+            name: 'Deal_Product_List__c',
+            whereClause: `Is_Active__c = TRUE AND Inven_Id__c IN {BatchIds} AND Bu_Id__c = '${buId}'`,
+            updateLocalSoup: true,
+            fields: dealProductListFields,
+            allOrNone: true
+        })
+        return dealProductListChunks.flat()
+    }
+
+    static syncDownDealProductListByCSV(locationId: string) {
+        return syncDownCSV({
+            objName: 'Deal_Product_List__c',
+            linkQuery: `LinkedEntityId = '${locationId}' 
+                AND ContentDocument.FileType = 'CSV'
+                AND ContentDocument.LatestPublishedVersion.ExternalDocumentInfo1 = 'Deal Product List File'`,
+            logInfo: `location: ${CommonParam.userLocationName}`,
+            mapFunc: (el: string) => {
+                // eslint-disable-next-line camelcase
+                const [Id, Inven_Id__c, Deal_Id__c, Bu_Id__c, Is_Active__c, Package_Id__c] = el.split(',')
+                // each data cell is padded with ' at the start
+                return {
+                    Id: Id.slice(1),
+                    Inven_Id__c: Inven_Id__c.slice(1),
+                    Deal_Id__c: Deal_Id__c.slice(1),
+                    Bu_Id__c: Bu_Id__c.slice(1),
+                    Is_Active__c: Is_Active__c.slice(1),
+                    Package_Id__c: Package_Id__c.slice(1)
+                }
+            }
+        })
+    }
+
+    static async syncDownCustomerDealByAPI(
+        routeAccountCustIds: (string | number)[],
+        customerDealCon: string,
+        customerDealFields: string[],
+        updateLocalSoup = true,
+        getIdClauseOverride?: Function
+    ) {
+        return await batchSynDown(
+            routeAccountCustIds,
+            {
+                name: 'Customer_Deal__c',
+                whereClause: customerDealCon,
+                updateLocalSoup: updateLocalSoup,
+                fields: customerDealFields,
+                allOrNone: true
+            },
+            getIdClauseOverride
+        )
+    }
+
+    static syncDownCustomerDealByCSV() {
+        return syncDownCSV({
+            objName: 'Customer_Deal__c',
+            linkQuery: `LinkedEntityId = '${CommonParam.userRouteId}' 
+                AND ContentDocument.FileType = 'CSV'
+                AND ContentDocument.LatestPublishedVersion.ExternalDocumentInfo1 = 'Customer Deal File generated by Batch'`,
+            logInfo: `route: ${CommonParam.userRouteGTMUId}`,
+            withId: true,
+            mapFunc: (el: string) => {
+                // eslint-disable-next-line camelcase
+                const [
+                    Id,
+                    Cust_Id__c,
+                    IsActive__c,
+                    Target_Field__c,
+                    Target_Table_Id__c,
+                    Query_Target_Id__c,
+                    Target_Name__c,
+                    Target_Value_Number__c,
+                    Delete_Flag__c,
+                    Pricing_Level_Id__c,
+                    Pricing_Level_Type_Code__c,
+                    Target_Id__c,
+                    Type__c,
+                    Customer_Group_ID__c,
+                    Customer_Group_Member_ID__c
+                ] = el.split(',')
+                // each data cell is padded with ' at the start
+                return {
+                    Id: Id.slice(1),
+                    Cust_Id__c: Cust_Id__c.slice(1),
+                    IsActive__c: IsActive__c.slice(1),
+                    Target_Field__c: Target_Field__c.slice(1),
+                    // Orderade to Fix: The following code are only temp approaches
+                    // Should remove after the backend data type changed.
+                    Target_Table_Id__c: Target_Table_Id__c
+                        ? `${Target_Table_Id__c.slice(1)}.0`
+                        : Target_Table_Id__c.slice(1),
+                    Query_Target_Id__c: Query_Target_Id__c
+                        ? `${Query_Target_Id__c.slice(1)}.0`
+                        : Query_Target_Id__c.slice(1),
+                    Target_Name__c: Target_Name__c.slice(1),
+                    Target_Value_Number__c: Target_Value_Number__c.slice(1),
+                    Delete_Flag__c: Delete_Flag__c.slice(1),
+                    Pricing_Level_Id__c: Pricing_Level_Id__c.slice(1),
+                    Pricing_Level_Type_Code__c: Pricing_Level_Type_Code__c.slice(1),
+                    Target_Id__c: Target_Id__c.slice(1),
+                    Type__c: Type__c.slice(1),
+                    Customer_Group_ID__c: Customer_Group_ID__c
+                        ? `${Customer_Group_ID__c.slice(1)}.0`
+                        : Customer_Group_ID__c.slice(1),
+                    Customer_Group_Member_ID__c: Customer_Group_Member_ID__c
+                        ? `${Customer_Group_Member_ID__c.slice(1)}.0`
+                        : Customer_Group_Member_ID__c.slice(1)
+                }
+            }
+        })
+    }
+
+    public static async syncDownPriceZone(
+        dateString: string | null,
+        PZIds: string[],
+        deltaExtraQuery: string,
+        priceZoneSyncFields: string[]
+    ) {
+        return await BaseInstance.sfSyncEngine.syncDown({
+            name: 'Price_Zone__c',
+            whereClause: dateString
+                ? `PBG_Pz_Id__c IN (${getIdClause(PZIds)}) ${deltaExtraQuery}`
+                : `Is_Active__c = true AND PBG_Pz_Id__c IN (${getIdClause(PZIds)})`,
+            updateLocalSoup: true,
+            fields: priceZoneSyncFields,
+            allOrNone: true
+        })
+    }
+
+    public static async syncDownBusinessSegmentDeal(
+        dateString: string | null,
+        PriceZoneIds: string[],
+        BsIds: string[],
+        deltaExtraQuery: string,
+        BSDSyncFields: string[]
+    ) {
+        return await BaseInstance.sfSyncEngine.syncDown({
+            name: 'Business_Segment_Deal__c',
+            whereClause: dateString
+                ? `Price_Zone_ID__c IN (${getIdClause(PriceZoneIds)}) AND Bus_Seg_Id__c IN (${getIdClause(
+                      BsIds
+                  )}) ${deltaExtraQuery}`
+                : `Delete_Flg__c = false AND Price_Zone_ID__c IN (${getIdClause(
+                      PriceZoneIds
+                  )}) AND Bus_Seg_Id__c IN (${getIdClause(BsIds)})`,
+            updateLocalSoup: true,
+            fields: BSDSyncFields,
+            allOrNone: true
+        })
+    }
+
+    public static async syncDownDeal(
+        BSDDealIds: any,
+        dateString: string | null,
+        regionCode: string,
+        deltaExtraQuery: string,
+        dealSyncFields: string[]
+    ) {
+        await batchSynDown(BSDDealIds, {
+            name: 'Deal__c',
+            whereClause: dateString
+                ? `Effective_date__c <= NEXT_N_DAYS:42
+                    AND Expiration_Date__c > TODAY
+                    AND Effective_Formula__c = true
+                    AND Bu_Id__c = '${regionCode}' ${deltaExtraQuery}
+                    AND Deal_Id__c IN {BatchIds}`
+                : `Is_Active__c = true 
+                    AND Effective_date__c <= NEXT_N_DAYS:42
+                    AND Expiration_Date__c > TODAY
+                    AND Effective_Formula__c = true
+                    AND Bu_Id__c = '${regionCode}'
+                    AND Deal_Id__c IN {BatchIds}`,
+            updateLocalSoup: true,
+            fields: dealSyncFields,
+            allOrNone: true
+        })
+    }
+
+    public static async syncDownNatlAccountPricing(
+        prodIds: string[],
+        dateString: string | null,
+        regionCode: string,
+        deltaExtraQuery: string,
+        NAPSyncFields: string[]
+    ) {
+        await batchSynDown(prodIds, {
+            name: 'Natl_Account_Pricing__c',
+            whereClause: dateString
+                ? `Price_Start_Date__c <= NEXT_N_DAYS:42
+                AND Price_End_Date__c > TODAY
+                AND Effective_Formula__c = true
+                AND Inven_Id__c IN {BatchIds}
+                AND Bu_Id__c = '${regionCode}' ${deltaExtraQuery}`
+                : `Is_Active__c = true 
+                AND Price_Start_Date__c <= NEXT_N_DAYS:42
+                AND Price_End_Date__c > TODAY
+                AND Effective_Formula__c = true
+                AND Inven_Id__c IN {BatchIds}
+                AND Bu_Id__c = '${regionCode}'`,
+            updateLocalSoup: true,
+            fields: NAPSyncFields,
+            allOrNone: true
+        })
+    }
+
+    public static async syncDownWholesalePrice(
+        prodIds: string[],
+        dateString: string | null,
+        PriceZoneIds: string[],
+        regionCode: string,
+        deltaExtraQuery: string,
+        WSPSyncFields: string[]
+    ) {
+        await batchSynDown(prodIds, {
+            name: 'Wholesale_Price__c',
+            whereClause: dateString
+                ? `Pz_Id__c IN (${getIdClause(PriceZoneIds)})
+                AND Bu_Id__c = '${regionCode}' 
+                AND Price_Start_Date__c <= NEXT_N_DAYS:42
+                AND Inven_Id__c IN {BatchIds}
+                AND Effective_Formula__c = true
+                AND Price_Term_Date__c > TODAY ${deltaExtraQuery}`
+                : `Is_Active__c = true 
+                AND Pz_Id__c IN (${getIdClause(PriceZoneIds)})
+                AND Bu_Id__c = '${regionCode}' 
+                AND Price_Start_Date__c <= NEXT_N_DAYS:42
+                AND Inven_Id__c IN {BatchIds}
+                AND Effective_Formula__c = true
+                AND Price_Term_Date__c > TODAY`,
+            updateLocalSoup: true,
+            fields: WSPSyncFields,
+            allOrNone: true
+        })
+    }
+}

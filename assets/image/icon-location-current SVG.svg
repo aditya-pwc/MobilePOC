@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-location-current SVG</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon_checkmark_circle-copy">
+            <circle id="Oval" stroke="#FFFFFF" fill="#000000" cx="14" cy="14" r="14.5"></circle>
+            <path d="M14,7 C10.6868,7 8,9.56375 8,12.7254167 C8,15.9366667 10.625,18.13175 14,21 C17.375,18.13175 20,15.9366667 20,12.7254167 C20,9.56375 17.3132,7 14,7 Z M14,14.9871795 C12.7762769,14.9871795 11.7846154,14.0227949 11.7846154,12.8333333 C11.7846154,11.6438718 12.7762769,10.6794872 14,10.6794872 C15.2237231,10.6794872 16.2153846,11.6438718 16.2153846,12.8333333 C16.2153846,14.0227949 15.2237231,14.9871795 14,14.9871795 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+        </g>
+    </g>
+</svg>
